@@ -22,8 +22,8 @@ const getCleanCharacters = (people) => {
   const formattedCharacters = allPeople.map(person => {
     return ({
       name: person.name,
-      species: people.species,
-      homeworld: people.homeworld,
+      species: person.species,
+      homeworld: person.homeworld,
       homeworldPopulation: 'homeworld population',
     });
   });
@@ -51,7 +51,7 @@ const getCleanVehicles = (vehicles) => {
     return ({
       name: vehicle.name, 
       model: vehicle.model,
-      class: vehicle.class, 
+      class: vehicle.vehicle_class, 
       passengerCount: vehicle.passengers
     });
   });

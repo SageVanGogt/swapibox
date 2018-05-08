@@ -2,7 +2,7 @@ import { getCleanCharacters, getCleanPlanets, getCleanVehicles } from './helper'
 
 class Api {
   constructor(url) {
-    this.data = this.getApiData(url);
+    this.subject = this.fetchApiData(url);
   };
 
   fetchApiData = (url) => {
@@ -12,26 +12,23 @@ class Api {
         switch (url) {
           case 'https://swapi.co/api/people/':
             const peopleData = getCleanCharacters(data);
-            const fetchedCharacterInfo = this.fetchHomeworlds(peopleData);
-            return fetchedCharacterInfo;
+            this.subject = this.fetchCharacterInfo(peopleData);
           break;
           case 'https://swapi.co/api/planets/':
             const planetsData = getCleanPlanets(data);
-            const fetchedPlanetInfo = this.fetchResidents(planetsData);
-            return fetchedPlanetInfo;
+            this.subject = this.fetchResidents(planetsData);
           break;
           case 'https://swapi.co/api/vehicles/':
-            const vehicleData = getCleanVehicles(data)
-            return vehicleData;
+            this.subject = getCleanVehicles(data);
+          break;
+          default: 
+            console.log('nope')
           break;
         }
-      })
-      .then(data => {
-        this.data = data;
-      })
+      })   
   }
 
-  fetchedCharacterInfo = (characters) => {
+  fetchCharacterInfo(characters) {
     const unresolvedPromises = characters.map(person => {
       return (
         fetch(person.homeworld)
