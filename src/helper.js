@@ -23,7 +23,7 @@ const getCleanCharacters = (people) => {
     return ({
       name: person.name,
       species: people.species,
-      homeworld: 'homeworld',
+      homeworld: people.homeworld,
       homeworldPopulation: 'homeworld population',
     });
   });
@@ -38,7 +38,7 @@ const getCleanPlanets = (planets) => {
       terrain: planet.terrain,
       population: planet.population,
       climate: planet.climate,
-      residents: 'planet.residents'
+      residents: planet.residents
     });
   });
 
