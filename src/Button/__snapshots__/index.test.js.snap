@@ -19,6 +19,7 @@ ShallowWrapper {
     "props": Object {
       "children": <button
         name={undefined}
+        onClick={[Function]}
 />,
       "className": "button",
     },
@@ -30,6 +31,7 @@ ShallowWrapper {
       "props": Object {
         "children": undefined,
         "name": undefined,
+        "onClick": [Function],
       },
       "ref": null,
       "rendered": null,
@@ -45,6 +47,7 @@ ShallowWrapper {
       "props": Object {
         "children": <button
           name={undefined}
+          onClick={[Function]}
 />,
         "className": "button",
       },
@@ -56,6 +59,7 @@ ShallowWrapper {
         "props": Object {
           "children": undefined,
           "name": undefined,
+          "onClick": [Function],
         },
         "ref": null,
         "rendered": null,
@@ -95,6 +99,7 @@ ShallowWrapper {
     "props": Object {
       "children": <button
         name="vehicles"
+        onClick={[Function]}
 >
         vehicles
 </button>,
@@ -108,6 +113,7 @@ ShallowWrapper {
       "props": Object {
         "children": "vehicles",
         "name": "vehicles",
+        "onClick": [Function],
       },
       "ref": null,
       "rendered": "vehicles",
@@ -123,6 +129,7 @@ ShallowWrapper {
       "props": Object {
         "children": <button
           name="vehicles"
+          onClick={[Function]}
 >
           vehicles
 </button>,
@@ -136,6 +143,7 @@ ShallowWrapper {
         "props": Object {
           "children": "vehicles",
           "name": "vehicles",
+          "onClick": [Function],
         },
         "ref": null,
         "rendered": "vehicles",
