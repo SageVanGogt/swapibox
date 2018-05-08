@@ -17,4 +17,17 @@ const findRanIndex = (filmCount) => {
   return number;
 }
 
-export default getRandomFilm;
+const getCleanCharacters = (people) => {
+  const allPeople = people.results;
+  const formattedCharacters = allPeople.map(person => {
+    return ({
+      name: person.name,
+      species: people.species,
+      homeworld: 'homeworld',
+      homeworldPopulation: 'homeworld population',
+    })
+  })
+  return formattedCharacters;
+}
+
+export { getRandomFilm, getCleanCharacters };
