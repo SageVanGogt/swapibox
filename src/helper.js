@@ -25,9 +25,42 @@ const getCleanCharacters = (people) => {
       species: people.species,
       homeworld: 'homeworld',
       homeworldPopulation: 'homeworld population',
-    })
-  })
+    });
+  });
   return formattedCharacters;
 }
 
-export { getRandomFilm, getCleanCharacters };
+const getCleanPlanets = (planets) => {
+  const allPlanets = planets.results;
+  const formattedPlanets = allPlanets.map(planet => {
+    return ({
+      name: planet.name,
+      terrain: planet.terrain,
+      population: planet.population,
+      climate: planet.climate,
+      residents: 'planet.residents'
+    });
+  });
+
+  return formattedPlanets;
+}
+
+const getCleanVehicles = (vehicles) => {
+  const allVehicles = vehicles.results;
+  const formattedVehicles = allVehicles.map(vehicle => {
+    return ({
+      name: vehicle.name, 
+      model: vehicle.model,
+      class: vehicle.class, 
+      passengerCount: vehicle.passengers
+    });
+  });
+  return formattedVehicles
+}
+
+export { 
+          getRandomFilm, 
+          getCleanCharacters, 
+          getCleanPlanets,
+          getCleanVehicles 
+        };
