@@ -1,5 +1,6 @@
 import React from 'react';
 // import './index.css';
+import PropTypes from 'prop-types';
 
 const Button = (props) => {
   const { section, handleClickEvent } = props
@@ -10,6 +11,11 @@ const Button = (props) => {
       </button>
     </div>
   );
+}
+
+Button.propTypes = {
+  handleClickEvent: PropTypes.func.isRequired,
+  section: PropTypes.string.isRequired
 }
 
 export default Button;
