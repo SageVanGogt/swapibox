@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Button from './../Button/index';
 import fetchApiData from './../api';
-import getRandomFilm from './../helper';
+import { getRandomFilm } from './../helper';
 import './index.css';
 
 class App extends Component {
@@ -12,6 +12,17 @@ class App extends Component {
       currentRandomFilm: {},
       currentSectionData: []
     };
+  }
+
+  async componentDidMount() {
+    const url = 'https://swapi.co/api/films/'
+    const response = await fetch(url);
+    const film = await response.json();
+    const currentRandomFilm = getRandomFilm(film);
+
+    this.setState({
+      currentRandomFilm
+    })
   }
 
   handleClickEvent = async (event) => {
