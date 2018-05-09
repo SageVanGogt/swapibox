@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Button from './../Button/index';
+import Film from './../Film/index';
 import fetchApiData from './../api';
 import { getRandomFilm } from './../helper';
 import './index.css';
@@ -43,6 +44,12 @@ class App extends Component {
           <Button section={'planets'} handleClickEvent={this.handleClickEvent}/>
           <Button section={'vehicles'} handleClickEvent={this.handleClickEvent}/>
         </nav>
+        { 
+          this.state.currentRandomFilm 
+          && <Film 
+          currentRandomFilm={this.state.currentRandomFilm}
+          />
+        }
       </div>
     );
   }
