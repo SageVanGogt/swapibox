@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Button from './../Button/index';
+import fetchApiData from './../api';
+import getRandomFilm from './../helper';
 import './index.css';
 
 class App extends Component {
@@ -7,16 +9,28 @@ class App extends Component {
     super();
 
     this.state = {
-      currentSubject: ''
+      currentRandomFilm: {},
+      currentSectionData: []
     };
   }
+
+  handleClickEvent = async (event) => {
+    const { name } = event.target;
+    const url = `https://swapi.co/api/${name}/`;
+    const currentSectionData = await fetchApiData(url);
+    
+    this.setState({
+      currentSectionData
+    })
+  }
+
   render() {
     return (
       <div className="App">
         <nav>
-          <Button section={'people'}/>
-          <Button section={'planets'}/>
-          <Button section={'vehicles'}/>
+          <Button section={'people'} handleClickEvent={this.handleClickEvent}/>
+          <Button section={'planets'} handleClickEvent={this.handleClickEvent}/>
+          <Button section={'vehicles'} handleClickEvent={this.handleClickEvent}/>
         </nav>
       </div>
     );
