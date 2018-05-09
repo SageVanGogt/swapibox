@@ -12,9 +12,7 @@ describe('Film container component', () => {
     const wrapper = shallow(<Film 
       currentRandomFilm={props}
     />);
-
-    console.log(wrapper)
-
+    
     expect(wrapper).toMatchSnapshot();
   })
 })
