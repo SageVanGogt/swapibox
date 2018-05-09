@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Button from './../Button/index';
-import Api from './../api';
+import fetchApiData from './../api';
+import getRandomFilm from './../helper';
 import './index.css';
 
 class App extends Component {
@@ -8,7 +9,6 @@ class App extends Component {
     super();
 
     this.state = {
-      currentSection: '',
       currentRandomFilm: {},
       currentSectionData: []
     };
@@ -16,24 +16,12 @@ class App extends Component {
 
   handleClickEvent = async (event) => {
     const { name } = event.target;
-
-    switch (name) {
-      case 'people': 
-        let peopleData = new Api('https://swapi.co/api/people/').subject
-        this.setState({currentSectionData: peopleData});
-      break;
-      case 'planets': 
-        this.setState({currentSectionData: new Api('https://swapi.co/api/planets/').subject});
-      break;
-      case 'vehicles': 
-        let vehicleData = await new Api('https://swapi.co/api/vehicles/').subject
-        debugger
-        this.setState({currentSectionData: vehicleData.subject});
-      break;
-      default: 
-      console.log('nothing');
-      break;
-    }
+    const url = `https://swapi.co/api/${name}/`;
+    const currentSectionData = await fetchApiData(url);
+    
+    this.setState({
+      currentSectionData
+    })
   }
 
   render() {
