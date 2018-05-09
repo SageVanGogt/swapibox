@@ -59,10 +59,9 @@ const fetchHomeworld = async (endpoint) => {
 const fetchPlanetInfo = (planets) => {
   try {
     const planetData = planets.map(async planet => {
-      const unresolvedPromises = await planet.residents.map(async resident => {
-        const response = await fetch(resident);
-        const residentToText = await response.json();
-        return residentToText.name;
+      const unresolvedPromises = await planet.residents.map(async res => {
+        const resident = await fetchResident(res);
+        return resident.name;
       })
       const resolvedPromises = await Promise.all(unresolvedPromises);
       return {
@@ -76,6 +75,12 @@ const fetchPlanetInfo = (planets) => {
     const error = new Error('fetch failed');
     return error;
   }
+}
+
+const fetchResident = async (res) => {
+  const response = await fetch(res);
+  const resident = await response.json();
+  return resident
 }
 
 export default fetchApiData;
