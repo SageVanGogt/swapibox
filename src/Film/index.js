@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Film = (props) => {
   const { openingCrawl, title, releaseYear } = props.currentRandomFilm;
@@ -10,5 +11,9 @@ const Film = (props) => {
     </div>
   );
 }
+
+Film.propTypes = {
+  currentRandomFilm: PropTypes.object.isRequired
+};
 
 export default Film;
