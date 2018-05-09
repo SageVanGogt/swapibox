@@ -1,27 +1,59 @@
 import fetchApiData from './api'
-import mockPeople from './mockData/mockPeople';
+import people from './mockData/mockPeople';
+import vehicles from './mockData/mockFilms';
+import { getCleanVehicles, getCleanCharacters } from './helper'
 
 describe('API', () => {
   describe('fetchCharacterInfo', () => {
-    let mockCharacters; 
+    
+    describe('fetch vehicle info', () => {
+      let mockVehicles;
 
-    beforeEach(() => {
-      mockCharacters = mockPeople
-      window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
-        json: () => Promise.resolve({
-          characters: mockCharacters,
-        })
-      }))
+      beforeEach(() => {
+        mockVehicles = vehicles;        
+        window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
+          json: () => Promise.resolve(mockVehicles)
+        }))
+      })
+
+      it('fetch vehicle info returns an array of vehicles', async () => {
+        const category = 'vehicles';
+        const actual = await fetchApiData(category);
+        const expected = await getCleanVehicles(mockVehicles);
+  
+        expect(actual).toEqual(expected);
+      })
     })
 
-    it('fetch is called with the right params', () => {
-      const expected = {
+    describe('fetch characters info', () => {
+      let mockCharacters;
 
-      }
-    })
+      beforeEach(() => {
+        mockCharacters = people;     
+        window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
+          json: () => Promise.resolve(mockCharacters)
+        }))   
+      })
 
-    it('should return ', () => {
-      
+      it('fetch is called with the correct params', async () => {
+        const expected = 'https://swapi.co/api/people/';
+
+        fetchApiData('people');
+
+        expect(window.fetch).toHaveBeenCalledWith(expected);
+      })
+    
+      it('fetch api call should call getCleanCharacters with correct info', async () => {
+        const category = 'people';
+        const actual = await fetchApiData(category);
+        const expected = {
+                            name: 'Luke Skywalker',
+                            species: undefined,
+                            homeworld: undefined,
+                            homeworldPopulation: undefined 
+                          }
+        expect(actual[0]).toEqual(expected)
+      })
     })
   })
 })

@@ -32,8 +32,7 @@ class App extends Component {
 
   handleClickEvent = async (event) => {
     const { name } = event.target;
-    const url = `https://swapi.co/api/${name}/`;
-    const currentSectionData = await fetchApiData(url);
+    const currentSectionData = await fetchApiData(name);
     
     await this.setState({
       currentSectionData
