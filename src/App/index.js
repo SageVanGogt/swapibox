@@ -16,14 +16,18 @@ class App extends Component {
   }
 
   async componentDidMount() {
-    const url = 'https://swapi.co/api/films/'
-    const response = await fetch(url);
-    const film = await response.json();
-    const currentRandomFilm = getRandomFilm(film);
-
+    const film = await this.fetchFilm();
+    const currentRandomFilm = await getRandomFilm(film);
     this.setState({
       currentRandomFilm
     })
+  }
+
+  fetchFilm = async () => {
+    const url = 'https://swapi.co/api/films/'
+    const response = await fetch(url);
+    const film = await response.json();
+    return film;
   }
 
   handleClickEvent = async (event) => {
@@ -31,7 +35,7 @@ class App extends Component {
     const url = `https://swapi.co/api/${name}/`;
     const currentSectionData = await fetchApiData(url);
     
-    this.setState({
+    await this.setState({
       currentSectionData
     })
   }

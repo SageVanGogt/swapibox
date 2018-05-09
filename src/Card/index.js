@@ -17,33 +17,34 @@ const Card = (props) => {
         } = props;
   const planetCard = (
     <div className="planet-card">
-      <h2>name</h2>
-      <h3>terrain</h3>
-      <h4>population</h4>
-      <h5>climate</h5>
-      <h4>residents</h4>
+      <h2>{name}</h2>
+      <h3>{terrain}</h3>
+      <h4>{population}</h4>
+      <h5>{climate}</h5>
+      <h4>{residents}</h4>
     </div>
   );
   const vehicleCard = (
     <div className="vehicle-card">
-      <h2>name</h2>
-      <h3>model</h3>
-      <h4>class</h4>
-      <h5>passengerCount</h5>
+      <h2>{name}</h2>
+      <h3>{model}</h3>
+      <h4>{class}</h4>
+      <h5>{passengerCount}</h5>
     </div>
   );
   const personCard = (
     <div className="person-card">
-      <h2>name</h2>
-      <h3>species</h3>
-      <h4>homeworld</h4>
-      <h5>homeworldPopulation</h5>
+      <h2>{name}</h2>
+      <h3>{species}</h3>
+      <h4>{homeworld}</h4>
+      <h5>{homeworldPopulation}</h5>
     </div>
   );
-  
+
+
   return(
     <div className="category-card">
-      
+      {}
     </div>
   );
 }

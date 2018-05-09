@@ -1,7 +1,7 @@
 import { getCleanCharacters, getCleanPlanets, getCleanVehicles } from './helper';
 
 const fetchApiData = async (url) => {
-  let final = [];
+  let final;
   const response = await fetch(url);
   const data = await response.json();
   switch (url) {

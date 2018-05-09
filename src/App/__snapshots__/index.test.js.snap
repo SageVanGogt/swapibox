@@ -17,93 +17,8 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <nav>
-        <Button
-                handleClickEvent={[Function]}
-                section="people"
-        />
-        <Button
-                handleClickEvent={[Function]}
-                section="planets"
-        />
-        <Button
-                handleClickEvent={[Function]}
-                section="vehicles"
-        />
-</nav>,
-      "className": "App",
-    },
-    "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <Button
-            handleClickEvent={[Function]}
-            section="people"
-/>,
-          <Button
-            handleClickEvent={[Function]}
-            section="planets"
-/>,
-          <Button
-            handleClickEvent={[Function]}
-            section="vehicles"
-/>,
-        ],
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "handleClickEvent": [Function],
-            "section": "people",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "handleClickEvent": [Function],
-            "section": "planets",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "handleClickEvent": [Function],
-            "section": "vehicles",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
-      "type": "nav",
-    },
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": <nav>
+      "children": Array [
+        <nav>
           <Button
                     handleClickEvent={[Function]}
                     section="people"
@@ -117,10 +32,15 @@ ShallowWrapper {
                     section="vehicles"
           />
 </nav>,
-        "className": "App",
-      },
-      "ref": null,
-      "rendered": Object {
+        <Film
+          currentRandomFilm={Object {}}
+/>,
+      ],
+      "className": "App",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
@@ -181,6 +101,122 @@ ShallowWrapper {
         ],
         "type": "nav",
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "currentRandomFilm": Object {},
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <nav>
+            <Button
+                        handleClickEvent={[Function]}
+                        section="people"
+            />
+            <Button
+                        handleClickEvent={[Function]}
+                        section="planets"
+            />
+            <Button
+                        handleClickEvent={[Function]}
+                        section="vehicles"
+            />
+</nav>,
+          <Film
+            currentRandomFilm={Object {}}
+/>,
+        ],
+        "className": "App",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Button
+                handleClickEvent={[Function]}
+                section="people"
+/>,
+              <Button
+                handleClickEvent={[Function]}
+                section="planets"
+/>,
+              <Button
+                handleClickEvent={[Function]}
+                section="vehicles"
+/>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "handleClickEvent": [Function],
+                "section": "people",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "handleClickEvent": [Function],
+                "section": "planets",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "handleClickEvent": [Function],
+                "section": "vehicles",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "nav",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "currentRandomFilm": Object {},
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
       "type": "div",
     },
   ],
