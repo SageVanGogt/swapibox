@@ -86,7 +86,7 @@ describe('Data cleaner for vehicles', () => {
     
     expect(result.hasOwnProperty('name')).toBe(true);
     expect(result.hasOwnProperty('model')).toBe(true);
-    expect(result.hasOwnProperty('class')).toBe(true);
+    expect(result.hasOwnProperty('vehicleClass')).toBe(true);
     expect(result.hasOwnProperty('passengerCount')).toBe(true);
   })
 })

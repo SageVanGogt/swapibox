@@ -51,7 +51,7 @@ const getCleanVehicles = (vehicles) => {
     return ({
       name: vehicle.name, 
       model: vehicle.model,
-      class: vehicle.vehicle_class, 
+      vehicleClass: vehicle.vehicle_class, 
       passengerCount: vehicle.passengers
     });
   });

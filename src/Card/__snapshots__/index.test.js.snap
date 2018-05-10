@@ -1,0 +1,747 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card component should match the snapshot of when it recieves the planet props 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Card
+    climate="padawan"
+    name="padawan"
+    population="padawan"
+    residents="residents"
+    terrain="padawan"
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        null,
+        null,
+        <div
+          className="planet-card"
+>
+          <h2>
+                    padawan
+          </h2>
+          <h3>
+                    padawan
+          </h3>
+          <h4>
+                    padawan
+          </h4>
+          <h5>
+                    padawan
+          </h5>
+          <h4>
+                    residents
+          </h4>
+</div>,
+      ],
+      "className": "category-card",
+    },
+    "ref": null,
+    "rendered": Array [
+      null,
+      null,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h2>
+              padawan
+</h2>,
+            <h3>
+              padawan
+</h3>,
+            <h4>
+              padawan
+</h4>,
+            <h5>
+              padawan
+</h5>,
+            <h4>
+              residents
+</h4>,
+          ],
+          "className": "planet-card",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "padawan",
+            },
+            "ref": null,
+            "rendered": "padawan",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "padawan",
+            },
+            "ref": null,
+            "rendered": "padawan",
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "padawan",
+            },
+            "ref": null,
+            "rendered": "padawan",
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "padawan",
+            },
+            "ref": null,
+            "rendered": "padawan",
+            "type": "h5",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "residents",
+            },
+            "ref": null,
+            "rendered": "residents",
+            "type": "h4",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          null,
+          null,
+          <div
+            className="planet-card"
+>
+            <h2>
+                        padawan
+            </h2>
+            <h3>
+                        padawan
+            </h3>
+            <h4>
+                        padawan
+            </h4>
+            <h5>
+                        padawan
+            </h5>
+            <h4>
+                        residents
+            </h4>
+</div>,
+        ],
+        "className": "category-card",
+      },
+      "ref": null,
+      "rendered": Array [
+        null,
+        null,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h2>
+                padawan
+</h2>,
+              <h3>
+                padawan
+</h3>,
+              <h4>
+                padawan
+</h4>,
+              <h5>
+                padawan
+</h5>,
+              <h4>
+                residents
+</h4>,
+            ],
+            "className": "planet-card",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "padawan",
+              },
+              "ref": null,
+              "rendered": "padawan",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "padawan",
+              },
+              "ref": null,
+              "rendered": "padawan",
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "padawan",
+              },
+              "ref": null,
+              "rendered": "padawan",
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "padawan",
+              },
+              "ref": null,
+              "rendered": "padawan",
+              "type": "h5",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "residents",
+              },
+              "ref": null,
+              "rendered": "residents",
+              "type": "h4",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`Card component should match the snapshot when it receives vehicle props 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Card
+    model="padawan"
+    name="padawan"
+    passengerCount="padawan"
+    vehicleClass="padawan"
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="vehicle-card"
+>
+          <h2>
+                    padawan
+          </h2>
+          <h3>
+                    padawan
+          </h3>
+          <h4>
+                    padawan
+          </h4>
+          <h5>
+                    padawan
+          </h5>
+</div>,
+        null,
+        null,
+      ],
+      "className": "category-card",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h2>
+              padawan
+</h2>,
+            <h3>
+              padawan
+</h3>,
+            <h4>
+              padawan
+</h4>,
+            <h5>
+              padawan
+</h5>,
+          ],
+          "className": "vehicle-card",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "padawan",
+            },
+            "ref": null,
+            "rendered": "padawan",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "padawan",
+            },
+            "ref": null,
+            "rendered": "padawan",
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "padawan",
+            },
+            "ref": null,
+            "rendered": "padawan",
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "padawan",
+            },
+            "ref": null,
+            "rendered": "padawan",
+            "type": "h5",
+          },
+        ],
+        "type": "div",
+      },
+      null,
+      null,
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="vehicle-card"
+>
+            <h2>
+                        padawan
+            </h2>
+            <h3>
+                        padawan
+            </h3>
+            <h4>
+                        padawan
+            </h4>
+            <h5>
+                        padawan
+            </h5>
+</div>,
+          null,
+          null,
+        ],
+        "className": "category-card",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h2>
+                padawan
+</h2>,
+              <h3>
+                padawan
+</h3>,
+              <h4>
+                padawan
+</h4>,
+              <h5>
+                padawan
+</h5>,
+            ],
+            "className": "vehicle-card",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "padawan",
+              },
+              "ref": null,
+              "rendered": "padawan",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "padawan",
+              },
+              "ref": null,
+              "rendered": "padawan",
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "padawan",
+              },
+              "ref": null,
+              "rendered": "padawan",
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "padawan",
+              },
+              "ref": null,
+              "rendered": "padawan",
+              "type": "h5",
+            },
+          ],
+          "type": "div",
+        },
+        null,
+        null,
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`Card component should match the snapshot when it recieves people props 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Card
+    homeworld="padawan"
+    homeworldPopulation="padawan"
+    name="padawan"
+    species="padawan"
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        null,
+        <div
+          className="person-card"
+>
+          <h2>
+                    padawan
+          </h2>
+          <h3>
+                    padawan
+          </h3>
+          <h4>
+                    padawan
+          </h4>
+          <h5>
+                    padawan
+          </h5>
+</div>,
+        null,
+      ],
+      "className": "category-card",
+    },
+    "ref": null,
+    "rendered": Array [
+      null,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h2>
+              padawan
+</h2>,
+            <h3>
+              padawan
+</h3>,
+            <h4>
+              padawan
+</h4>,
+            <h5>
+              padawan
+</h5>,
+          ],
+          "className": "person-card",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "padawan",
+            },
+            "ref": null,
+            "rendered": "padawan",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "padawan",
+            },
+            "ref": null,
+            "rendered": "padawan",
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "padawan",
+            },
+            "ref": null,
+            "rendered": "padawan",
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "padawan",
+            },
+            "ref": null,
+            "rendered": "padawan",
+            "type": "h5",
+          },
+        ],
+        "type": "div",
+      },
+      null,
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          null,
+          <div
+            className="person-card"
+>
+            <h2>
+                        padawan
+            </h2>
+            <h3>
+                        padawan
+            </h3>
+            <h4>
+                        padawan
+            </h4>
+            <h5>
+                        padawan
+            </h5>
+</div>,
+          null,
+        ],
+        "className": "category-card",
+      },
+      "ref": null,
+      "rendered": Array [
+        null,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h2>
+                padawan
+</h2>,
+              <h3>
+                padawan
+</h3>,
+              <h4>
+                padawan
+</h4>,
+              <h5>
+                padawan
+</h5>,
+            ],
+            "className": "person-card",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "padawan",
+              },
+              "ref": null,
+              "rendered": "padawan",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "padawan",
+              },
+              "ref": null,
+              "rendered": "padawan",
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "padawan",
+              },
+              "ref": null,
+              "rendered": "padawan",
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "padawan",
+              },
+              "ref": null,
+              "rendered": "padawan",
+              "type": "h5",
+            },
+          ],
+          "type": "div",
+        },
+        null,
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
