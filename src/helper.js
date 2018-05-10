@@ -54,8 +54,7 @@ const getCleanVehicles = (vehicles) => {
       name: vehicle.name, 
       model: vehicle.model,
       vehicleClass: vehicle.vehicle_class, 
-      passengerCount: vehicle.passengers,
-      favorite: false
+      passengerCount: vehicle.passengers
     });
   });
   return formattedVehicles

@@ -56,8 +56,8 @@ class App extends Component {
       const favoriteIndex = currentFavorites.indexOf(favoriteExists);
       currentFavorites.splice(favoriteIndex, 1);
     } else {
-      const chosen = this.state.currentSectionData.find(data => data.name === value)
-      currentFavorites.push(chosen)
+      const chosenCard = this.state.currentSectionData.find(data => data.name === value)
+      currentFavorites.push(chosenCard)
     }
     
     this.setState({
