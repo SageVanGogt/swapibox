@@ -24,8 +24,7 @@ const getCleanCharacters = (people) => {
       name: person.name,
       species: person.species,
       homeworld: person.homeworld,
-      homeworldPopulation: 'homeworld population',
-      favorite: false
+      homeworldPopulation: 'homeworld population'
     });
   });
   return formattedCharacters;
@@ -39,8 +38,7 @@ const getCleanPlanets = (planets) => {
       terrain: planet.terrain,
       population: planet.population,
       climate: planet.climate,
-      residents: planet.residents,
-      favorite: false
+      residents: planet.residents
     });
   });
 
