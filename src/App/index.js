@@ -12,7 +12,8 @@ class App extends Component {
 
     this.state = {
       currentRandomFilm: {},
-      currentSectionData: []
+      currentSectionData: [],
+      currentFavorites: []
     };
   }
 
@@ -40,6 +41,24 @@ class App extends Component {
     })
   }
 
+  handleFavorite = (event) => {
+    const { value } = event.target;
+    const currentFavorites = this.state.currentFavorites;
+    const favoriteExists = currentFavorites.find(data => data.name === value);
+
+    if(favoriteExists) {
+      const favoriteIndex = currentFavorites.indexOf(favoriteExists);
+      currentFavorites.splice(favoriteIndex, 1);
+    } else {
+      const chosen = this.state.currentSectionData.find(data => data.name === value)
+      currentFavorites.push(chosen)
+    }
+    
+    this.setState({
+      currentFavorites
+    })
+  }
+
   render() {
     return (
       <div className="App">
@@ -54,10 +73,12 @@ class App extends Component {
             currentRandomFilm={this.state.currentRandomFilm}
           />
         }
+        <img src="./assets/beerTap.png"/>
         {
           this.state.currentSectionData &&
           <CardContainer
             currentSectionData={this.state.currentSectionData}
+            handleFavorite={this.handleFavorite}
           />
         }
       </div>
