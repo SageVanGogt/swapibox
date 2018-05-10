@@ -31,12 +31,20 @@ ShallowWrapper {
                     handleClickEvent={[Function]}
                     section="vehicles"
           />
+          <Button
+                    handleClickEvent={[Function]}
+                    section="favorites"
+          />
 </nav>,
         <Film
           currentRandomFilm={Object {}}
 />,
+        <img
+          src="./assets/beerTap.png"
+/>,
         <CardContainer
           currentSectionData={Array []}
+          handleFavorite={[Function]}
 />,
       ],
       "className": "App",
@@ -60,6 +68,10 @@ ShallowWrapper {
             <Button
               handleClickEvent={[Function]}
               section="vehicles"
+/>,
+            <Button
+              handleClickEvent={[Function]}
+              section="favorites"
 />,
           ],
         },
@@ -101,6 +113,18 @@ ShallowWrapper {
             "rendered": null,
             "type": [Function],
           },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "handleClickEvent": [Function],
+              "section": "favorites",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
         ],
         "type": "nav",
       },
@@ -118,9 +142,21 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "src": "./assets/beerTap.png",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
         "nodeType": "function",
         "props": Object {
           "currentSectionData": Array [],
+          "handleFavorite": [Function],
         },
         "ref": null,
         "rendered": null,
@@ -149,12 +185,20 @@ ShallowWrapper {
                         handleClickEvent={[Function]}
                         section="vehicles"
             />
+            <Button
+                        handleClickEvent={[Function]}
+                        section="favorites"
+            />
 </nav>,
           <Film
             currentRandomFilm={Object {}}
 />,
+          <img
+            src="./assets/beerTap.png"
+/>,
           <CardContainer
             currentSectionData={Array []}
+            handleFavorite={[Function]}
 />,
         ],
         "className": "App",
@@ -178,6 +222,10 @@ ShallowWrapper {
               <Button
                 handleClickEvent={[Function]}
                 section="vehicles"
+/>,
+              <Button
+                handleClickEvent={[Function]}
+                section="favorites"
 />,
             ],
           },
@@ -219,6 +267,18 @@ ShallowWrapper {
               "rendered": null,
               "type": [Function],
             },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "handleClickEvent": [Function],
+                "section": "favorites",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
           ],
           "type": "nav",
         },
@@ -236,9 +296,21 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "src": "./assets/beerTap.png",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
           "nodeType": "function",
           "props": Object {
             "currentSectionData": Array [],
+            "handleFavorite": [Function],
           },
           "ref": null,
           "rendered": null,

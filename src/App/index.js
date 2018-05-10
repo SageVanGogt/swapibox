@@ -13,7 +13,7 @@ class App extends Component {
     this.state = {
       currentRandomFilm: {},
       currentSectionData: [],
-      currentFavorites: []
+      allData: {vehicles: [], planets: [], people: [], favorites: []}
     };
   }
 
@@ -34,34 +34,44 @@ class App extends Component {
 
   handleClickEvent = async (event) => {
     const { name } = event.target;
-    if(name === 'show favorites') {
-      const currentSectionData = this.state.currentFavorites;
-      this.setState({
-        currentSectionData
-      })
-    } else {
-      const currentSectionData = await fetchApiData(name); 
-      await this.setState({
-        currentSectionData
-      })
+    if(Object.values(this.state.allData[name]).length) {
+      this.setStateToExistingData(name);
+      return;
     }
+   
+    const currentSectionData = await fetchApiData(name); 
+    const allData = {...this.state.allData, [name]: currentSectionData}
+    await this.setState({
+      currentSectionData, 
+      allData
+    })
+  }
+
+  setStateToExistingData = (name) => {
+    const currentSectionData = this.state.allData[name];
+
+    this.setState({
+      currentSectionData
+    })
   }
 
   handleFavorite = (event) => {
     const { value } = event.target;
-    const currentFavorites = this.state.currentFavorites;
-    const favoriteExists = currentFavorites.find(data => data.name === value);
-
+    const favorites = this.state.allData.favorites;
+    const favoriteExists = favorites.find(data => data.name === value);
+    //includes filter out, if it does spread it in
+    //refactor this area
     if(favoriteExists) {
-      const favoriteIndex = currentFavorites.indexOf(favoriteExists);
-      currentFavorites.splice(favoriteIndex, 1);
+      const favoriteIndex = favorites.indexOf(favoriteExists);
+      favorites.splice(favoriteIndex, 1);
     } else {
       const chosenCard = this.state.currentSectionData.find(data => data.name === value)
-      currentFavorites.push(chosenCard)
+      favorites.push(chosenCard)
     }
+    const allData = {...this.state.allData, favorites}
     
     this.setState({
-      currentFavorites
+      allData
     })
   }
 
@@ -72,7 +82,7 @@ class App extends Component {
           <Button section={'people'} handleClickEvent={this.handleClickEvent}/>
           <Button section={'planets'} handleClickEvent={this.handleClickEvent}/>
           <Button section={'vehicles'} handleClickEvent={this.handleClickEvent}/>
-          <Button section={'show favorites'} handleClickEvent={this.handleClickEvent}/>
+          <Button section={'favorites'} handleClickEvent={this.handleClickEvent}/>
         </nav>
         { 
           this.state.currentRandomFilm && 

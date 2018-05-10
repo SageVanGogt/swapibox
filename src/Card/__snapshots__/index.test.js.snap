@@ -29,6 +29,11 @@ ShallowWrapper {
         <div
           className="planet-card"
 >
+          <Button
+                    handleFavorite={undefined}
+                    name="padawan"
+                    section="favorite"
+          />
           <h2>
                     padawan
           </h2>
@@ -58,6 +63,11 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
+            <Button
+              handleFavorite={undefined}
+              name="padawan"
+              section="favorite"
+/>,
             <h2>
               padawan
 </h2>,
@@ -78,6 +88,19 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "handleFavorite": undefined,
+              "name": "padawan",
+              "section": "favorite",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
           Object {
             "instance": null,
             "key": undefined,
@@ -151,6 +174,11 @@ ShallowWrapper {
           <div
             className="planet-card"
 >
+            <Button
+                        handleFavorite={undefined}
+                        name="padawan"
+                        section="favorite"
+            />
             <h2>
                         padawan
             </h2>
@@ -180,6 +208,11 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
+              <Button
+                handleFavorite={undefined}
+                name="padawan"
+                section="favorite"
+/>,
               <h2>
                 padawan
 </h2>,
@@ -200,6 +233,19 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "handleFavorite": undefined,
+                "name": "padawan",
+                "section": "favorite",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
             Object {
               "instance": null,
               "key": undefined,
@@ -298,6 +344,11 @@ ShallowWrapper {
         <div
           className="vehicle-card"
 >
+          <Button
+                    handleFavorite={undefined}
+                    name="padawan"
+                    section="favorite"
+          />
           <h2>
                     padawan
           </h2>
@@ -324,6 +375,11 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
+            <Button
+              handleFavorite={undefined}
+              name="padawan"
+              section="favorite"
+/>,
             <h2>
               padawan
 </h2>,
@@ -341,6 +397,19 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "handleFavorite": undefined,
+              "name": "padawan",
+              "section": "favorite",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
           Object {
             "instance": null,
             "key": undefined,
@@ -403,6 +472,11 @@ ShallowWrapper {
           <div
             className="vehicle-card"
 >
+            <Button
+                        handleFavorite={undefined}
+                        name="padawan"
+                        section="favorite"
+            />
             <h2>
                         padawan
             </h2>
@@ -429,6 +503,11 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
+              <Button
+                handleFavorite={undefined}
+                name="padawan"
+                section="favorite"
+/>,
               <h2>
                 padawan
 </h2>,
@@ -446,6 +525,19 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "handleFavorite": undefined,
+                "name": "padawan",
+                "section": "favorite",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
             Object {
               "instance": null,
               "key": undefined,
@@ -536,6 +628,11 @@ ShallowWrapper {
         <div
           className="person-card"
 >
+          <Button
+                    handleFavorite={undefined}
+                    name="padawan"
+                    section="favorite"
+          />
           <h2>
                     padawan
           </h2>
@@ -562,6 +659,11 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
+            <Button
+              handleFavorite={undefined}
+              name="padawan"
+              section="favorite"
+/>,
             <h2>
               padawan
 </h2>,
@@ -579,6 +681,19 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "handleFavorite": undefined,
+              "name": "padawan",
+              "section": "favorite",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
           Object {
             "instance": null,
             "key": undefined,
@@ -641,6 +756,11 @@ ShallowWrapper {
           <div
             className="person-card"
 >
+            <Button
+                        handleFavorite={undefined}
+                        name="padawan"
+                        section="favorite"
+            />
             <h2>
                         padawan
             </h2>
@@ -667,6 +787,11 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
+              <Button
+                handleFavorite={undefined}
+                name="padawan"
+                section="favorite"
+/>,
               <h2>
                 padawan
 </h2>,
@@ -684,6 +809,19 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "handleFavorite": undefined,
+                "name": "padawan",
+                "section": "favorite",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
             Object {
               "instance": null,
               "key": undefined,

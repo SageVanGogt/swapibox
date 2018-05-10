@@ -30,6 +30,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Card
+          handleFavorite={undefined}
           model="rambo"
           name="rambo"
           passengerCount="rambo"
@@ -45,6 +46,7 @@ ShallowWrapper {
         "key": "card0",
         "nodeType": "function",
         "props": Object {
+          "handleFavorite": undefined,
           "model": "rambo",
           "name": "rambo",
           "passengerCount": "rambo",
@@ -65,6 +67,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Card
+            handleFavorite={undefined}
             model="rambo"
             name="rambo"
             passengerCount="rambo"
@@ -80,6 +83,7 @@ ShallowWrapper {
           "key": "card0",
           "nodeType": "function",
           "props": Object {
+            "handleFavorite": undefined,
             "model": "rambo",
             "name": "rambo",
             "passengerCount": "rambo",
