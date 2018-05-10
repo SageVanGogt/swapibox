@@ -12,10 +12,10 @@ const Card = (props) => {
           population, 
           residents,
           model, 
-          class, 
+          vehicleClass, 
           passengerCount
         } = props;
-  const planetCard = (
+  const planetCard = residents ? (
     <div className="planet-card">
       <h2>{name}</h2>
       <h3>{terrain}</h3>
@@ -23,34 +23,46 @@ const Card = (props) => {
       <h5>{climate}</h5>
       <h4>{residents}</h4>
     </div>
-  );
-  const vehicleCard = (
+  ) : null;
+  const vehicleCard = vehicleClass ? (
     <div className="vehicle-card">
       <h2>{name}</h2>
       <h3>{model}</h3>
-      <h4>{class}</h4>
+      <h4>{vehicleClass}</h4>
       <h5>{passengerCount}</h5>
     </div>
-  );
-  const personCard = (
+  ) : null;
+  const personCard = homeworld ? (
     <div className="person-card">
       <h2>{name}</h2>
       <h3>{species}</h3>
       <h4>{homeworld}</h4>
       <h5>{homeworldPopulation}</h5>
     </div>
-  );
+  ): null;
 
 
   return(
     <div className="category-card">
-      {}
+      {vehicleCard}
+      {personCard}
+      {planetCard}
     </div>
   );
 }
 
 Card.propTypes = {
-
+  name: PropTypes.string.isRequired,
+  species: PropTypes.string,
+  homeworld: PropTypes.string,
+  homeworldPopulation: PropTypes.string,
+  terrain: PropTypes.string,
+  climate: PropTypes.string,
+  population: PropTypes.string,
+  residents: PropTypes.string,
+  model: PropTypes.string,
+  vehicleClass: PropTypes.string,
+  passengerCount: PropTypes.string
 }
 
 export default Card;
