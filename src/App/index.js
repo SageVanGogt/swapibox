@@ -34,11 +34,17 @@ class App extends Component {
 
   handleClickEvent = async (event) => {
     const { name } = event.target;
-    const currentSectionData = await fetchApiData(name);
-    
-    await this.setState({
-      currentSectionData
-    })
+    if(name === 'show favorites') {
+      const currentSectionData = this.state.currentFavorites;
+      this.setState({
+        currentSectionData
+      })
+    } else {
+      const currentSectionData = await fetchApiData(name); 
+      await this.setState({
+        currentSectionData
+      })
+    }
   }
 
   handleFavorite = (event) => {
@@ -66,6 +72,7 @@ class App extends Component {
           <Button section={'people'} handleClickEvent={this.handleClickEvent}/>
           <Button section={'planets'} handleClickEvent={this.handleClickEvent}/>
           <Button section={'vehicles'} handleClickEvent={this.handleClickEvent}/>
+          <Button section={'show favorites'} handleClickEvent={this.handleClickEvent}/>
         </nav>
         { 
           this.state.currentRandomFilm && 
