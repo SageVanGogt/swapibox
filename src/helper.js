@@ -24,7 +24,7 @@ const getCleanCharacters = (people) => {
       name: person.name,
       species: person.species,
       homeworld: person.homeworld,
-      homeworldPopulation: 'homeworld population',
+      homeworldPopulation: 'homeworld population'
     });
   });
   return formattedCharacters;

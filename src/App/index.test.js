@@ -11,7 +11,7 @@ describe('App component', () => {
     mockFilms = films;
     window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
       json: () => Promise.resolve(mockFilms)
-    }))
+    }));
   })
 
   it('should match the snapshot', () => {

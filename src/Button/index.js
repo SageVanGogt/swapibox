@@ -3,10 +3,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Button = (props) => {
-  const { section, handleClickEvent } = props
+  const { section, handleClickEvent, handleFavorite, name } = props
+  const clickFunction = section === 'favorite' ? handleFavorite : handleClickEvent
   return (
     <div className='button'>
-      <button name={section} onClick={handleClickEvent}>
+      <button name={section} onClick={clickFunction} value={name}>
         {section}
       </button>
     </div>
@@ -14,7 +15,7 @@ const Button = (props) => {
 }
 
 Button.propTypes = {
-  handleClickEvent: PropTypes.func.isRequired,
+  handleClickEvent: PropTypes.func,
   section: PropTypes.string.isRequired
 }
 

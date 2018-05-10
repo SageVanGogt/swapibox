@@ -8,6 +8,7 @@ const CardContainer = (props) => {
       <Card 
         key={`card${i}`}
         {...data}
+        handleFavorite={props.handleFavorite}
       />
     );
   })
