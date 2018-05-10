@@ -93,5 +93,16 @@ describe('API', () => {
                         }
       expect(actual[0]).toEqual(expected)
     })
+
+    it('should throw an error when hitting the catch block in the fetch request', async () => {
+      window.fetch = 
+        jest.fn().mockImplementation(() => Promise.reject({
+          status: 500
+        }));
+      const expectedError = Error('Fetch failed');
+      const getVehicleDataRes = await fetchApiData('planets');
+  
+      expect(getVehicleDataRes).toEqual(expectedError);
+    });
   })
 })

@@ -2,25 +2,30 @@ import { getCleanCharacters, getCleanPlanets, getCleanVehicles } from './helper'
 
 const fetchApiData = async (name) => {
   let final;
-  const url = `https://swapi.co/api/${name}/`
-  const response = await fetch(url);
-  const data = await response.json();
-  switch (name) {
-    case 'people':
-      const peopleData = getCleanCharacters(data);
-      final = await fetchCharacterInfo(peopleData);
-      break;
-    case 'planets':
-      const planetsData = getCleanPlanets(data);
-      final = await fetchPlanetInfo(planetsData);
-      break;
-    case 'vehicles':
-      final = await getCleanVehicles(data);
-      break;
-    default: 
-      final = [];
-      break;
-  }  
+  try {
+    const url = `https://swapi.co/api/${name}/`
+    const response = await fetch(url);
+    const data = await response.json();
+    switch (name) {
+      case 'people':
+        const peopleData = getCleanCharacters(data);
+        final = await fetchCharacterInfo(peopleData);
+        break;
+      case 'planets':
+        const planetsData = getCleanPlanets(data);
+        final = await fetchPlanetInfo(planetsData);
+        break;
+      case 'vehicles':
+        final = await getCleanVehicles(data);
+        break;
+      default: 
+        final = [];
+        break;
+    }
+  } catch(er) {
+    const error = new Error('Fetch failed');
+    return error;
+  }
 
   return final
 }
@@ -67,7 +72,7 @@ const fetchPlanetInfo = (planets) => {
       return {
         ...planet,
         residents: resolvedPromises
-      };
+        };
     });
 
   return Promise.all(planetData);
