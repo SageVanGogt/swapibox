@@ -37,4 +37,25 @@ describe('App component', () => {
 
     expect(actual).toEqual(expected);
   })
+
+  it('handle favorite should send a favorite', () => {
+    const wrapper = shallow(<App />);
+    const mockCurrentCards = [{
+      homeworld: "Tatooine",
+      homeworldPopulation: "200000",
+      name: "Luke Skywalker",
+      species: "Human"
+    },
+    {
+      homeworld: "Naboo",
+      homeworldPopulation: "4500000000",
+      name: "R2-D2",
+      species: "Droid"
+    }
+  ]
+  // wrapper.state('currentSectionData') = mockCurrentCards
+
+    console.log(wrapper.state())
+    const mockEvent = {target: {value: 'Luke Skywalker'}}
+  })
 })

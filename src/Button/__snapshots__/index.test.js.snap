@@ -20,6 +20,7 @@ ShallowWrapper {
       "children": <button
         name={undefined}
         onClick={undefined}
+        value={undefined}
 />,
       "className": "button",
     },
@@ -32,6 +33,7 @@ ShallowWrapper {
         "children": undefined,
         "name": undefined,
         "onClick": undefined,
+        "value": undefined,
       },
       "ref": null,
       "rendered": null,
@@ -48,6 +50,7 @@ ShallowWrapper {
         "children": <button
           name={undefined}
           onClick={undefined}
+          value={undefined}
 />,
         "className": "button",
       },
@@ -60,6 +63,7 @@ ShallowWrapper {
           "children": undefined,
           "name": undefined,
           "onClick": undefined,
+          "value": undefined,
         },
         "ref": null,
         "rendered": null,
@@ -100,6 +104,7 @@ ShallowWrapper {
       "children": <button
         name="vehicles"
         onClick={undefined}
+        value={undefined}
 >
         vehicles
 </button>,
@@ -114,6 +119,7 @@ ShallowWrapper {
         "children": "vehicles",
         "name": "vehicles",
         "onClick": undefined,
+        "value": undefined,
       },
       "ref": null,
       "rendered": "vehicles",
@@ -130,6 +136,7 @@ ShallowWrapper {
         "children": <button
           name="vehicles"
           onClick={undefined}
+          value={undefined}
 >
           vehicles
 </button>,
@@ -144,6 +151,7 @@ ShallowWrapper {
           "children": "vehicles",
           "name": "vehicles",
           "onClick": undefined,
+          "value": undefined,
         },
         "ref": null,
         "rendered": "vehicles",

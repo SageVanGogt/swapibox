@@ -54,7 +54,7 @@ const Card = (props) => {
       <h4>{homeworld}</h4>
       <h5>{homeworldPopulation}</h5>
     </div>
-  ): null;
+  ): null; 
 
 
   return(

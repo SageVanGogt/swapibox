@@ -16,7 +16,7 @@ const Button = (props) => {
 
 Button.propTypes = {
   handleClickEvent: PropTypes.func,
-  section: PropTypes.string.isRequired
+  section: PropTypes.string
 }
 
 export default Button;
