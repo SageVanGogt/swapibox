@@ -1,16 +1,21 @@
+
 .App {
   display: grid;
   grid-template-columns: 200px 1fr 400px;
   grid-template-rows: 300px 1fr;
-  grid-template-areas: "a b c" "e e f";
+  grid-template-areas: 
+  "a b c"
+  "e e f";
   justify-content: stretch;
   align-items: stretch;
-  background-image: url("/assets/cantina.jpg");
+  background-image: url('/assets/cantina.jpg');
   background-size: 120vw;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+}
 
 .nav-container {
-  grid-area: f; }
-
+  grid-area: f;  
+}
 .beer-nav {
-  height: 400px; }
+  height: 400px;
+}

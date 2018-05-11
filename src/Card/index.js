@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Button from './../Button/index';
+import './index.css';
 
 const Card = (props) => {
   const { 
@@ -17,7 +18,7 @@ const Card = (props) => {
           passengerCount
         } = props;
   const planetCard = residents ? (
-    <div className="planet-card">
+    <div className="card planet-card">
       <Button 
         section={'favorite'}
         handleFavorite={props.handleFavorite}
@@ -31,7 +32,7 @@ const Card = (props) => {
     </div>
   ) : null;
   const vehicleCard = vehicleClass ? (
-    <div className="vehicle-card">
+    <div className="card vehicle-card">
       <Button 
         section={'favorite'}
         handleFavorite={props.handleFavorite}
@@ -44,7 +45,7 @@ const Card = (props) => {
     </div>
   ) : null;
   const personCard = homeworld ? (
-    <div className="person-card">
+    <div className="card person-card">
       <Button section={'favorite'}
         handleFavorite={props.handleFavorite}
         name={name}

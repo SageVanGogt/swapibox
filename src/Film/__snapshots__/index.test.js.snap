@@ -26,15 +26,23 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <p>
-          aca
-</p>,
-        <h2>
-          aca
-</h2>,
-        <h4>
-          aca
-</h4>,
+        <img
+          alt="tv"
+          src="/assets/starwarstv.png"
+/>,
+        <div
+          className="scrolling-text"
+>
+          <p>
+                    aca
+          </p>
+          <h2>
+                    aca
+          </h2>
+          <h4>
+                    aca
+          </h4>
+</div>,
       ],
       "className": "film-container",
     },
@@ -45,33 +53,68 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "aca",
+          "alt": "tv",
+          "src": "/assets/starwarstv.png",
         },
         "ref": null,
-        "rendered": "aca",
-        "type": "p",
+        "rendered": null,
+        "type": "img",
       },
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "aca",
+          "children": Array [
+            <p>
+              aca
+</p>,
+            <h2>
+              aca
+</h2>,
+            <h4>
+              aca
+</h4>,
+          ],
+          "className": "scrolling-text",
         },
         "ref": null,
-        "rendered": "aca",
-        "type": "h2",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "aca",
-        },
-        "ref": null,
-        "rendered": "aca",
-        "type": "h4",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "aca",
+            },
+            "ref": null,
+            "rendered": "aca",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "aca",
+            },
+            "ref": null,
+            "rendered": "aca",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "aca",
+            },
+            "ref": null,
+            "rendered": "aca",
+            "type": "h4",
+          },
+        ],
+        "type": "div",
       },
     ],
     "type": "div",
@@ -83,15 +126,23 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <p>
-            aca
-</p>,
-          <h2>
-            aca
-</h2>,
-          <h4>
-            aca
-</h4>,
+          <img
+            alt="tv"
+            src="/assets/starwarstv.png"
+/>,
+          <div
+            className="scrolling-text"
+>
+            <p>
+                        aca
+            </p>
+            <h2>
+                        aca
+            </h2>
+            <h4>
+                        aca
+            </h4>
+</div>,
         ],
         "className": "film-container",
       },
@@ -102,33 +153,68 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "aca",
+            "alt": "tv",
+            "src": "/assets/starwarstv.png",
           },
           "ref": null,
-          "rendered": "aca",
-          "type": "p",
+          "rendered": null,
+          "type": "img",
         },
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "aca",
+            "children": Array [
+              <p>
+                aca
+</p>,
+              <h2>
+                aca
+</h2>,
+              <h4>
+                aca
+</h4>,
+            ],
+            "className": "scrolling-text",
           },
           "ref": null,
-          "rendered": "aca",
-          "type": "h2",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "aca",
-          },
-          "ref": null,
-          "rendered": "aca",
-          "type": "h4",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "aca",
+              },
+              "ref": null,
+              "rendered": "aca",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "aca",
+              },
+              "ref": null,
+              "rendered": "aca",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "aca",
+              },
+              "ref": null,
+              "rendered": "aca",
+              "type": "h4",
+            },
+          ],
+          "type": "div",
         },
       ],
       "type": "div",
