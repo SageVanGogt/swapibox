@@ -1,4 +1,4 @@
-import { getCleanCharacters, getCleanPlanets, getCleanVehicles } from './helper';
+import { getCleanCharacters, getCleanPlanets, getCleanVehicles } from './../helper';
 
 const fetchApiData = async (name) => {
   try {

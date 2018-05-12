@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Button from './../Button/index';
 import Film from './../Film/index';
 import CardContainer from './../CardContainer/index';
-import fetchApiData from './../api';
+import fetchApiData from './../apiCalls/api';
 import { getRandomFilm } from './../helper';
 import './index.css';
 
@@ -26,10 +26,16 @@ class App extends Component {
   }
 
   fetchFilm = async () => {
-    const url = 'https://swapi.co/api/films/'
-    const response = await fetch(url);
-    const film = await response.json();
-    return film;
+    try {
+      const url = 'https://swapi.co/api/films/';
+      const response = await fetch(url);
+      const film = await response.json();
+      return film;
+    } catch(error) {
+      const error = 'We had an issue grabbing you movie';
+      const currentRandomFilm = error;
+      this.setState({currentRandomFilm});
+    }
   }
 
   handleClickEvent = async (event) => {
@@ -39,12 +45,18 @@ class App extends Component {
       return;
     }
    
-    const currentSectionData = await fetchApiData(name); 
-    const allData = {...this.state.allData, [name]: currentSectionData}
-    await this.setState({
-      currentSectionData, 
-      allData
-    })
+    try {
+      const currentSectionData = await fetchApiData(name); 
+      const allData = {...this.state.allData, [name]: currentSectionData}
+      await this.setState({
+        currentSectionData, 
+        allData
+      })
+    } catch(error) {
+      const error = 'There was an error fetching data';
+      const currentSectionData = error
+      this.setState({currentSectionData})
+    }
   }
 
   setStateToExistingData = (name) => {
@@ -83,7 +95,7 @@ class App extends Component {
       <div className="App">
         <img 
           src="/assets/cantina.jpg" 
-          alt="background image of cantina" 
+          alt="cantina" 
           className="cantina-image"
         />
         <div className="nav-container">
