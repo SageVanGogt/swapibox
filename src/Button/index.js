@@ -21,7 +21,11 @@ const Button = (props) => {
 
 Button.propTypes = {
   handleClickEvent: PropTypes.func,
-  section: PropTypes.string
+  section: PropTypes.string,
+  handleFavorite: PropTypes.func,
+  name: PropTypes.string,
+  favoriteCount: PropTypes.number,
+  favorited: PropTypes.bool
 }
 
 export default Button;
