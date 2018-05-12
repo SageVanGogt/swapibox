@@ -24,11 +24,11 @@ const Card = (props) => {
         handleFavorite={props.handleFavorite}
         name={name}
       />
-      <h2>{name}</h2>
-      <h3>{terrain}</h3>
-      <h4>{population}</h4>
-      <h5>{climate}</h5>
-      <h4>{residents}</h4>
+      <h2>name: {name}</h2>
+      <h3>terrain: {terrain}</h3>
+      <h4>population: {population}</h4>
+      <h5>climate: {climate}</h5>
+      <h4>residents: {residents}</h4>
     </div>
   ) : null;
   const vehicleCard = vehicleClass ? (
@@ -38,10 +38,10 @@ const Card = (props) => {
         handleFavorite={props.handleFavorite}
         name={name}
       />
-      <h2>{name}</h2>
-      <h3>{model}</h3>
-      <h4>{vehicleClass}</h4>
-      <h5>{passengerCount}</h5>
+      <h2>name: {name}</h2>
+      <h3>model: {model}</h3>
+      <h4>class: {vehicleClass}</h4>
+      <h5>passengers: {passengerCount}</h5>
     </div>
   ) : null;
   const personCard = homeworld ? (
@@ -50,10 +50,10 @@ const Card = (props) => {
         handleFavorite={props.handleFavorite}
         name={name}
       />
-      <h2>{name}</h2>
-      <h3>{species}</h3>
-      <h4>{homeworld}</h4>
-      <h5>{homeworldPopulation}</h5>
+      <h2>name: {name}</h2>
+      <h3>species: {species}</h3>
+      <h4>homeworld: {homeworld}</h4>
+      <h5>homeworld population: {homeworldPopulation}</h5>
     </div>
   ): null; 
 

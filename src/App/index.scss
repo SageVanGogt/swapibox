@@ -8,14 +8,21 @@
   "e e f";
   justify-content: stretch;
   align-items: stretch;
-  background-image: url('/assets/cantina.jpg');
-  background-size: 120vw;
-  background-repeat: no-repeat;
+  // background-image: url('/assets/cantina.jpg');
+  // background-size: 120vw;
+  // background-repeat: no-repeat;
 }
 
 .nav-container {
   grid-area: f;  
 }
+
 .beer-nav {
   height: 400px;
+}
+
+.cantina-image {
+  position: absolute;
+  height: 100%;
+  z-index: -1;
 }

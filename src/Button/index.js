@@ -3,11 +3,12 @@ import './index.css';
 import PropTypes from 'prop-types';
 
 const Button = (props) => {
-  const { section, handleClickEvent, handleFavorite, name } = props
-  const clickFunction = section === 'favorite' ? handleFavorite : handleClickEvent
+  const { section, handleClickEvent, handleFavorite, name } = props;
+  const clickFunction = section === 'favorite' ? handleFavorite : handleClickEvent;
+  // const 
   return (
     <div className='button'>
-      <button name={section} onClick={clickFunction} value={name}>
+      <button name={section} onClick={clickFunction} value={name} className="">
         {section}
       </button>
     </div>

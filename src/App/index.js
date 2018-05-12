@@ -78,6 +78,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <img src="/assets/cantina.jpg" alt="background image of cantina" className="cantina-image"/>
         <div className="nav-container">
           <nav>
             <Button section={'people'} handleClickEvent={this.handleClickEvent}/>

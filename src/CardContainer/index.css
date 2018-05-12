@@ -1,4 +1,7 @@
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  grid-area: e; }
+  height: 430px;
+  grid-area: e;
+  justify-content: space-around;
+  overflow: scroll; }
