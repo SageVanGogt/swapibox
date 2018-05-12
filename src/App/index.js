@@ -13,7 +13,7 @@ class App extends Component {
     this.state = {
       currentRandomFilm: {},
       currentSectionData: [],
-      allData: {vehicles: [], planets: [], people: [], favorites: []}
+      allData: {vehicles: [], planets: [], people: [], favorites: [], favoriteCount: 0}
     };
   }
 
@@ -62,13 +62,16 @@ class App extends Component {
     const favoriteExists = favorites.find(data => data.name === value);
     //includes filter out, if it does spread it in
     //refactor this area
+    currentChosen.favorited = !currentChosen.favorited;
+
     if(favoriteExists) {
       const favoriteIndex = favorites.indexOf(favoriteExists);
       favorites.splice(favoriteIndex, 1);
     } else {
       favorites.push(currentChosen)
     }
-    const allData = {...this.state.allData, favorites}
+    const favoriteCount = favorites.length
+    const allData = {...this.state.allData, favorites, favoriteCount}
     
     this.setState({
       allData
@@ -81,10 +84,23 @@ class App extends Component {
         <img src="/assets/cantina.jpg" alt="background image of cantina" className="cantina-image"/>
         <div className="nav-container">
           <nav>
-            <Button section={'people'} handleClickEvent={this.handleClickEvent}/>
-            <Button section={'planets'} handleClickEvent={this.handleClickEvent}/>
-            <Button section={'vehicles'} handleClickEvent={this.handleClickEvent}/>
-            <Button section={'favorites'} handleClickEvent={this.handleClickEvent}/>
+            <Button 
+              section={'people'} 
+              handleClickEvent={this.handleClickEvent}
+            />
+            <Button 
+              section={'planets'} 
+              handleClickEvent={this.handleClickEvent}
+            />
+            <Button 
+              section={'vehicles'} 
+              handleClickEvent={this.handleClickEvent}
+            />
+            <Button 
+              section={'favorites'} 
+              handleClickEvent={this.handleClickEvent} 
+              favoriteCount={this.state.allData.favoriteCount}
+            />
           </nav>
           <img src="./assets/beerTap.png" alt="beertap navigation" className="beer-nav"/>
         </div>

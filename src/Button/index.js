@@ -3,13 +3,17 @@ import './index.css';
 import PropTypes from 'prop-types';
 
 const Button = (props) => {
-  const { section, handleClickEvent, handleFavorite, name } = props;
+  const { section, handleClickEvent, handleFavorite, name, favoriteCount, favorited } = props;
   const clickFunction = section === 'favorite' ? handleFavorite : handleClickEvent;
-  // const 
+  const favoriteState = favorited && 'favorite-active'
+  const classNameVar = `${section}-button ${favoriteState}`;
   return (
     <div className='button'>
-      <button name={section} onClick={clickFunction} value={name} className="">
+      <button name={section} onClick={clickFunction} value={name} className={classNameVar}>
         {section}
+        {
+          favoriteCount && favoriteCount
+        }
       </button>
     </div>
   );

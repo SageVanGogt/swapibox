@@ -4,8 +4,8 @@
   grid-template-columns: 200px 1fr 400px;
   grid-template-rows: 300px 1fr;
   grid-template-areas: 
-  "a b c"
-  "e e f";
+  "a f f"
+  "e e e";
   justify-content: stretch;
   align-items: stretch;
   // background-image: url('/assets/cantina.jpg');
@@ -14,15 +14,21 @@
 }
 
 .nav-container {
-  grid-area: f;  
+  grid-area: f;
+  margin-left: 500px;
+  margin-top: 50px;
 }
 
 .beer-nav {
-  height: 400px;
+  height: 600px;
 }
 
 .cantina-image {
   position: absolute;
   height: 100%;
   z-index: -1;
+}
+
+nav {
+  display: flex;
 }

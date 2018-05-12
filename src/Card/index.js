@@ -15,7 +15,8 @@ const Card = (props) => {
           residents,
           model, 
           vehicleClass, 
-          passengerCount
+          passengerCount,
+          favorited
         } = props;
   const planetCard = residents ? (
     <div className="card planet-card">
@@ -23,6 +24,7 @@ const Card = (props) => {
         section={'favorite'}
         handleFavorite={props.handleFavorite}
         name={name}
+        favorited={favorited}
       />
       <h2>name: {name}</h2>
       <h3>terrain: {terrain}</h3>
@@ -37,6 +39,7 @@ const Card = (props) => {
         section={'favorite'}
         handleFavorite={props.handleFavorite}
         name={name}
+        favorited={favorited}
       />
       <h2>name: {name}</h2>
       <h3>model: {model}</h3>
@@ -49,6 +52,7 @@ const Card = (props) => {
       <Button section={'favorite'}
         handleFavorite={props.handleFavorite}
         name={name}
+        favorited={favorited}
       />
       <h2>name: {name}</h2>
       <h3>species: {species}</h3>

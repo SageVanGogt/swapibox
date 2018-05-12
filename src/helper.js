@@ -24,7 +24,8 @@ const getCleanCharacters = (people) => {
       name: person.name,
       species: person.species,
       homeworld: person.homeworld,
-      homeworldPopulation: 'homeworld population'
+      homeworldPopulation: 'homeworld population',
+      favorited: false
     });
   });
   return formattedCharacters;
@@ -38,7 +39,8 @@ const getCleanPlanets = (planets) => {
       terrain: planet.terrain,
       population: planet.population,
       climate: planet.climate,
-      residents: planet.residents
+      residents: planet.residents,
+      favorited: false
     });
   });
 
@@ -52,7 +54,8 @@ const getCleanVehicles = (vehicles) => {
       name: vehicle.name, 
       model: vehicle.model,
       vehicleClass: vehicle.vehicle_class, 
-      passengerCount: vehicle.passengers
+      passengerCount: vehicle.passengers,
+      favorited: false
     });
   });
   return formattedVehicles
