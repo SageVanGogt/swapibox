@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Card from './../Card/index';
+import './index.css';
 
 const CardContainer = (props) => {
   const allCards = props.currentSectionData.map((data, i) => {

@@ -1,0 +1,39 @@
+.favorites-button, .planets-button, .people-button, .vehicles-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.favorites-button:active, .planets-button:active, .people-button:active, .vehicles-button:active {
+  background-color: chartreuse;
+}
+
+.favorites-button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 50%
+}
+
+.planets-button, .people-button, .vehicles-button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 50%
+}
+
+.favorite-active {
+  background-color: blue;
+}

@@ -26,13 +26,26 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <p>
-          aca
-</p>,
-        <h2>
+        <img
+          alt="tv"
+          className="tv-image"
+          src="/assets/starwarstv.png"
+/>,
+        <div
+          className="scrolling-text"
+>
+          <p>
+                    aca
+          </p>
+</div>,
+        <h2
+          className="title"
+>
           aca
 </h2>,
-        <h4>
+        <h4
+          className="year"
+>
           aca
 </h4>,
       ],
@@ -45,11 +58,37 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "aca",
+          "alt": "tv",
+          "className": "tv-image",
+          "src": "/assets/starwarstv.png",
         },
         "ref": null,
-        "rendered": "aca",
-        "type": "p",
+        "rendered": null,
+        "type": "img",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <p>
+            aca
+</p>,
+          "className": "scrolling-text",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "aca",
+          },
+          "ref": null,
+          "rendered": "aca",
+          "type": "p",
+        },
+        "type": "div",
       },
       Object {
         "instance": null,
@@ -57,6 +96,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "aca",
+          "className": "title",
         },
         "ref": null,
         "rendered": "aca",
@@ -68,6 +108,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "aca",
+          "className": "year",
         },
         "ref": null,
         "rendered": "aca",
@@ -83,13 +124,26 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <p>
-            aca
-</p>,
-          <h2>
+          <img
+            alt="tv"
+            className="tv-image"
+            src="/assets/starwarstv.png"
+/>,
+          <div
+            className="scrolling-text"
+>
+            <p>
+                        aca
+            </p>
+</div>,
+          <h2
+            className="title"
+>
             aca
 </h2>,
-          <h4>
+          <h4
+            className="year"
+>
             aca
 </h4>,
         ],
@@ -102,11 +156,37 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "aca",
+            "alt": "tv",
+            "className": "tv-image",
+            "src": "/assets/starwarstv.png",
           },
           "ref": null,
-          "rendered": "aca",
-          "type": "p",
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <p>
+              aca
+</p>,
+            "className": "scrolling-text",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "aca",
+            },
+            "ref": null,
+            "rendered": "aca",
+            "type": "p",
+          },
+          "type": "div",
         },
         Object {
           "instance": null,
@@ -114,6 +194,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "aca",
+            "className": "title",
           },
           "ref": null,
           "rendered": "aca",
@@ -125,6 +206,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "aca",
+            "className": "year",
           },
           "ref": null,
           "rendered": "aca",

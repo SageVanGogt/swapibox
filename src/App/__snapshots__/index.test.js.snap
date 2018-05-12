@@ -18,29 +18,41 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <nav>
-          <Button
-                    handleClickEvent={[Function]}
-                    section="people"
+        <img
+          alt="background image of cantina"
+          className="cantina-image"
+          src="/assets/cantina.jpg"
+/>,
+        <div
+          className="nav-container"
+>
+          <nav>
+                    <Button
+                              handleClickEvent={[Function]}
+                              section="people"
+                    />
+                    <Button
+                              handleClickEvent={[Function]}
+                              section="planets"
+                    />
+                    <Button
+                              handleClickEvent={[Function]}
+                              section="vehicles"
+                    />
+                    <Button
+                              favoriteCount={0}
+                              handleClickEvent={[Function]}
+                              section="favorites"
+                    />
+          </nav>
+          <img
+                    alt="beertap navigation"
+                    className="beer-nav"
+                    src="./assets/beerTap.png"
           />
-          <Button
-                    handleClickEvent={[Function]}
-                    section="planets"
-          />
-          <Button
-                    handleClickEvent={[Function]}
-                    section="vehicles"
-          />
-          <Button
-                    handleClickEvent={[Function]}
-                    section="favorites"
-          />
-</nav>,
+</div>,
         <Film
           currentRandomFilm={Object {}}
-/>,
-        <img
-          src="./assets/beerTap.png"
 />,
         <CardContainer
           currentSectionData={Array []}
@@ -56,77 +68,143 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
+          "alt": "background image of cantina",
+          "className": "cantina-image",
+          "src": "/assets/cantina.jpg",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
           "children": Array [
-            <Button
-              handleClickEvent={[Function]}
-              section="people"
-/>,
-            <Button
-              handleClickEvent={[Function]}
-              section="planets"
-/>,
-            <Button
-              handleClickEvent={[Function]}
-              section="vehicles"
-/>,
-            <Button
-              handleClickEvent={[Function]}
-              section="favorites"
+            <nav>
+              <Button
+                            handleClickEvent={[Function]}
+                            section="people"
+              />
+              <Button
+                            handleClickEvent={[Function]}
+                            section="planets"
+              />
+              <Button
+                            handleClickEvent={[Function]}
+                            section="vehicles"
+              />
+              <Button
+                            favoriteCount={0}
+                            handleClickEvent={[Function]}
+                            section="favorites"
+              />
+</nav>,
+            <img
+              alt="beertap navigation"
+              className="beer-nav"
+              src="./assets/beerTap.png"
 />,
           ],
+          "className": "nav-container",
         },
         "ref": null,
         "rendered": Array [
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "function",
+            "nodeType": "host",
             "props": Object {
-              "handleClickEvent": [Function],
-              "section": "people",
+              "children": Array [
+                <Button
+                  handleClickEvent={[Function]}
+                  section="people"
+/>,
+                <Button
+                  handleClickEvent={[Function]}
+                  section="planets"
+/>,
+                <Button
+                  handleClickEvent={[Function]}
+                  section="vehicles"
+/>,
+                <Button
+                  favoriteCount={0}
+                  handleClickEvent={[Function]}
+                  section="favorites"
+/>,
+              ],
             },
             "ref": null,
-            "rendered": null,
-            "type": [Function],
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "handleClickEvent": [Function],
+                  "section": "people",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "handleClickEvent": [Function],
+                  "section": "planets",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "handleClickEvent": [Function],
+                  "section": "vehicles",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "favoriteCount": 0,
+                  "handleClickEvent": [Function],
+                  "section": "favorites",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "nav",
           },
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "function",
+            "nodeType": "host",
             "props": Object {
-              "handleClickEvent": [Function],
-              "section": "planets",
+              "alt": "beertap navigation",
+              "className": "beer-nav",
+              "src": "./assets/beerTap.png",
             },
             "ref": null,
             "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "handleClickEvent": [Function],
-              "section": "vehicles",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "handleClickEvent": [Function],
-              "section": "favorites",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
+            "type": "img",
           },
         ],
-        "type": "nav",
+        "type": "div",
       },
       Object {
         "instance": null,
@@ -138,17 +216,6 @@ ShallowWrapper {
         "ref": null,
         "rendered": null,
         "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "src": "./assets/beerTap.png",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": "img",
       },
       Object {
         "instance": null,
@@ -172,29 +239,41 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <nav>
-            <Button
-                        handleClickEvent={[Function]}
-                        section="people"
+          <img
+            alt="background image of cantina"
+            className="cantina-image"
+            src="/assets/cantina.jpg"
+/>,
+          <div
+            className="nav-container"
+>
+            <nav>
+                        <Button
+                                    handleClickEvent={[Function]}
+                                    section="people"
+                        />
+                        <Button
+                                    handleClickEvent={[Function]}
+                                    section="planets"
+                        />
+                        <Button
+                                    handleClickEvent={[Function]}
+                                    section="vehicles"
+                        />
+                        <Button
+                                    favoriteCount={0}
+                                    handleClickEvent={[Function]}
+                                    section="favorites"
+                        />
+            </nav>
+            <img
+                        alt="beertap navigation"
+                        className="beer-nav"
+                        src="./assets/beerTap.png"
             />
-            <Button
-                        handleClickEvent={[Function]}
-                        section="planets"
-            />
-            <Button
-                        handleClickEvent={[Function]}
-                        section="vehicles"
-            />
-            <Button
-                        handleClickEvent={[Function]}
-                        section="favorites"
-            />
-</nav>,
+</div>,
           <Film
             currentRandomFilm={Object {}}
-/>,
-          <img
-            src="./assets/beerTap.png"
 />,
           <CardContainer
             currentSectionData={Array []}
@@ -210,77 +289,143 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
+            "alt": "background image of cantina",
+            "className": "cantina-image",
+            "src": "/assets/cantina.jpg",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
             "children": Array [
-              <Button
-                handleClickEvent={[Function]}
-                section="people"
-/>,
-              <Button
-                handleClickEvent={[Function]}
-                section="planets"
-/>,
-              <Button
-                handleClickEvent={[Function]}
-                section="vehicles"
-/>,
-              <Button
-                handleClickEvent={[Function]}
-                section="favorites"
+              <nav>
+                <Button
+                                handleClickEvent={[Function]}
+                                section="people"
+                />
+                <Button
+                                handleClickEvent={[Function]}
+                                section="planets"
+                />
+                <Button
+                                handleClickEvent={[Function]}
+                                section="vehicles"
+                />
+                <Button
+                                favoriteCount={0}
+                                handleClickEvent={[Function]}
+                                section="favorites"
+                />
+</nav>,
+              <img
+                alt="beertap navigation"
+                className="beer-nav"
+                src="./assets/beerTap.png"
 />,
             ],
+            "className": "nav-container",
           },
           "ref": null,
           "rendered": Array [
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "function",
+              "nodeType": "host",
               "props": Object {
-                "handleClickEvent": [Function],
-                "section": "people",
+                "children": Array [
+                  <Button
+                    handleClickEvent={[Function]}
+                    section="people"
+/>,
+                  <Button
+                    handleClickEvent={[Function]}
+                    section="planets"
+/>,
+                  <Button
+                    handleClickEvent={[Function]}
+                    section="vehicles"
+/>,
+                  <Button
+                    favoriteCount={0}
+                    handleClickEvent={[Function]}
+                    section="favorites"
+/>,
+                ],
               },
               "ref": null,
-              "rendered": null,
-              "type": [Function],
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "handleClickEvent": [Function],
+                    "section": "people",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "handleClickEvent": [Function],
+                    "section": "planets",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "handleClickEvent": [Function],
+                    "section": "vehicles",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "favoriteCount": 0,
+                    "handleClickEvent": [Function],
+                    "section": "favorites",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "nav",
             },
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "function",
+              "nodeType": "host",
               "props": Object {
-                "handleClickEvent": [Function],
-                "section": "planets",
+                "alt": "beertap navigation",
+                "className": "beer-nav",
+                "src": "./assets/beerTap.png",
               },
               "ref": null,
               "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "handleClickEvent": [Function],
-                "section": "vehicles",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "handleClickEvent": [Function],
-                "section": "favorites",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
+              "type": "img",
             },
           ],
-          "type": "nav",
+          "type": "div",
         },
         Object {
           "instance": null,
@@ -292,17 +437,6 @@ ShallowWrapper {
           "ref": null,
           "rendered": null,
           "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "src": "./assets/beerTap.png",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": "img",
         },
         Object {
           "instance": null,

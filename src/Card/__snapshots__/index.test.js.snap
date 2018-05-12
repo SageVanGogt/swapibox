@@ -27,26 +27,32 @@ ShallowWrapper {
         null,
         null,
         <div
-          className="planet-card"
+          className="card planet-card"
 >
           <Button
+                    favorited={undefined}
                     handleFavorite={undefined}
                     name="padawan"
                     section="favorite"
           />
           <h2>
+                    name: 
                     padawan
           </h2>
           <h3>
+                    terrain: 
                     padawan
           </h3>
           <h4>
+                    population: 
                     padawan
           </h4>
           <h5>
+                    climate: 
                     padawan
           </h5>
           <h4>
+                    residents: 
                     residents
           </h4>
 </div>,
@@ -64,27 +70,33 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <Button
+              favorited={undefined}
               handleFavorite={undefined}
               name="padawan"
               section="favorite"
 />,
             <h2>
+              name: 
               padawan
 </h2>,
             <h3>
+              terrain: 
               padawan
 </h3>,
             <h4>
+              population: 
               padawan
 </h4>,
             <h5>
+              climate: 
               padawan
 </h5>,
             <h4>
+              residents: 
               residents
 </h4>,
           ],
-          "className": "planet-card",
+          "className": "card planet-card",
         },
         "ref": null,
         "rendered": Array [
@@ -93,6 +105,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
+              "favorited": undefined,
               "handleFavorite": undefined,
               "name": "padawan",
               "section": "favorite",
@@ -106,10 +119,16 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "padawan",
+              "children": Array [
+                "name: ",
+                "padawan",
+              ],
             },
             "ref": null,
-            "rendered": "padawan",
+            "rendered": Array [
+              "name: ",
+              "padawan",
+            ],
             "type": "h2",
           },
           Object {
@@ -117,10 +136,16 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "padawan",
+              "children": Array [
+                "terrain: ",
+                "padawan",
+              ],
             },
             "ref": null,
-            "rendered": "padawan",
+            "rendered": Array [
+              "terrain: ",
+              "padawan",
+            ],
             "type": "h3",
           },
           Object {
@@ -128,10 +153,16 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "padawan",
+              "children": Array [
+                "population: ",
+                "padawan",
+              ],
             },
             "ref": null,
-            "rendered": "padawan",
+            "rendered": Array [
+              "population: ",
+              "padawan",
+            ],
             "type": "h4",
           },
           Object {
@@ -139,10 +170,16 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "padawan",
+              "children": Array [
+                "climate: ",
+                "padawan",
+              ],
             },
             "ref": null,
-            "rendered": "padawan",
+            "rendered": Array [
+              "climate: ",
+              "padawan",
+            ],
             "type": "h5",
           },
           Object {
@@ -150,10 +187,16 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "residents",
+              "children": Array [
+                "residents: ",
+                "residents",
+              ],
             },
             "ref": null,
-            "rendered": "residents",
+            "rendered": Array [
+              "residents: ",
+              "residents",
+            ],
             "type": "h4",
           },
         ],
@@ -172,26 +215,32 @@ ShallowWrapper {
           null,
           null,
           <div
-            className="planet-card"
+            className="card planet-card"
 >
             <Button
+                        favorited={undefined}
                         handleFavorite={undefined}
                         name="padawan"
                         section="favorite"
             />
             <h2>
+                        name: 
                         padawan
             </h2>
             <h3>
+                        terrain: 
                         padawan
             </h3>
             <h4>
+                        population: 
                         padawan
             </h4>
             <h5>
+                        climate: 
                         padawan
             </h5>
             <h4>
+                        residents: 
                         residents
             </h4>
 </div>,
@@ -209,27 +258,33 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <Button
+                favorited={undefined}
                 handleFavorite={undefined}
                 name="padawan"
                 section="favorite"
 />,
               <h2>
+                name: 
                 padawan
 </h2>,
               <h3>
+                terrain: 
                 padawan
 </h3>,
               <h4>
+                population: 
                 padawan
 </h4>,
               <h5>
+                climate: 
                 padawan
 </h5>,
               <h4>
+                residents: 
                 residents
 </h4>,
             ],
-            "className": "planet-card",
+            "className": "card planet-card",
           },
           "ref": null,
           "rendered": Array [
@@ -238,6 +293,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "function",
               "props": Object {
+                "favorited": undefined,
                 "handleFavorite": undefined,
                 "name": "padawan",
                 "section": "favorite",
@@ -251,10 +307,16 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "padawan",
+                "children": Array [
+                  "name: ",
+                  "padawan",
+                ],
               },
               "ref": null,
-              "rendered": "padawan",
+              "rendered": Array [
+                "name: ",
+                "padawan",
+              ],
               "type": "h2",
             },
             Object {
@@ -262,10 +324,16 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "padawan",
+                "children": Array [
+                  "terrain: ",
+                  "padawan",
+                ],
               },
               "ref": null,
-              "rendered": "padawan",
+              "rendered": Array [
+                "terrain: ",
+                "padawan",
+              ],
               "type": "h3",
             },
             Object {
@@ -273,10 +341,16 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "padawan",
+                "children": Array [
+                  "population: ",
+                  "padawan",
+                ],
               },
               "ref": null,
-              "rendered": "padawan",
+              "rendered": Array [
+                "population: ",
+                "padawan",
+              ],
               "type": "h4",
             },
             Object {
@@ -284,10 +358,16 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "padawan",
+                "children": Array [
+                  "climate: ",
+                  "padawan",
+                ],
               },
               "ref": null,
-              "rendered": "padawan",
+              "rendered": Array [
+                "climate: ",
+                "padawan",
+              ],
               "type": "h5",
             },
             Object {
@@ -295,10 +375,16 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "residents",
+                "children": Array [
+                  "residents: ",
+                  "residents",
+                ],
               },
               "ref": null,
-              "rendered": "residents",
+              "rendered": Array [
+                "residents: ",
+                "residents",
+              ],
               "type": "h4",
             },
           ],
@@ -342,23 +428,28 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <div
-          className="vehicle-card"
+          className="card vehicle-card"
 >
           <Button
+                    favorited={undefined}
                     handleFavorite={undefined}
                     name="padawan"
                     section="favorite"
           />
           <h2>
+                    name: 
                     padawan
           </h2>
           <h3>
+                    model: 
                     padawan
           </h3>
           <h4>
+                    class: 
                     padawan
           </h4>
           <h5>
+                    passengers: 
                     padawan
           </h5>
 </div>,
@@ -376,24 +467,29 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <Button
+              favorited={undefined}
               handleFavorite={undefined}
               name="padawan"
               section="favorite"
 />,
             <h2>
+              name: 
               padawan
 </h2>,
             <h3>
+              model: 
               padawan
 </h3>,
             <h4>
+              class: 
               padawan
 </h4>,
             <h5>
+              passengers: 
               padawan
 </h5>,
           ],
-          "className": "vehicle-card",
+          "className": "card vehicle-card",
         },
         "ref": null,
         "rendered": Array [
@@ -402,6 +498,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
+              "favorited": undefined,
               "handleFavorite": undefined,
               "name": "padawan",
               "section": "favorite",
@@ -415,10 +512,16 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "padawan",
+              "children": Array [
+                "name: ",
+                "padawan",
+              ],
             },
             "ref": null,
-            "rendered": "padawan",
+            "rendered": Array [
+              "name: ",
+              "padawan",
+            ],
             "type": "h2",
           },
           Object {
@@ -426,10 +529,16 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "padawan",
+              "children": Array [
+                "model: ",
+                "padawan",
+              ],
             },
             "ref": null,
-            "rendered": "padawan",
+            "rendered": Array [
+              "model: ",
+              "padawan",
+            ],
             "type": "h3",
           },
           Object {
@@ -437,10 +546,16 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "padawan",
+              "children": Array [
+                "class: ",
+                "padawan",
+              ],
             },
             "ref": null,
-            "rendered": "padawan",
+            "rendered": Array [
+              "class: ",
+              "padawan",
+            ],
             "type": "h4",
           },
           Object {
@@ -448,10 +563,16 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "padawan",
+              "children": Array [
+                "passengers: ",
+                "padawan",
+              ],
             },
             "ref": null,
-            "rendered": "padawan",
+            "rendered": Array [
+              "passengers: ",
+              "padawan",
+            ],
             "type": "h5",
           },
         ],
@@ -470,23 +591,28 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <div
-            className="vehicle-card"
+            className="card vehicle-card"
 >
             <Button
+                        favorited={undefined}
                         handleFavorite={undefined}
                         name="padawan"
                         section="favorite"
             />
             <h2>
+                        name: 
                         padawan
             </h2>
             <h3>
+                        model: 
                         padawan
             </h3>
             <h4>
+                        class: 
                         padawan
             </h4>
             <h5>
+                        passengers: 
                         padawan
             </h5>
 </div>,
@@ -504,24 +630,29 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <Button
+                favorited={undefined}
                 handleFavorite={undefined}
                 name="padawan"
                 section="favorite"
 />,
               <h2>
+                name: 
                 padawan
 </h2>,
               <h3>
+                model: 
                 padawan
 </h3>,
               <h4>
+                class: 
                 padawan
 </h4>,
               <h5>
+                passengers: 
                 padawan
 </h5>,
             ],
-            "className": "vehicle-card",
+            "className": "card vehicle-card",
           },
           "ref": null,
           "rendered": Array [
@@ -530,6 +661,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "function",
               "props": Object {
+                "favorited": undefined,
                 "handleFavorite": undefined,
                 "name": "padawan",
                 "section": "favorite",
@@ -543,10 +675,16 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "padawan",
+                "children": Array [
+                  "name: ",
+                  "padawan",
+                ],
               },
               "ref": null,
-              "rendered": "padawan",
+              "rendered": Array [
+                "name: ",
+                "padawan",
+              ],
               "type": "h2",
             },
             Object {
@@ -554,10 +692,16 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "padawan",
+                "children": Array [
+                  "model: ",
+                  "padawan",
+                ],
               },
               "ref": null,
-              "rendered": "padawan",
+              "rendered": Array [
+                "model: ",
+                "padawan",
+              ],
               "type": "h3",
             },
             Object {
@@ -565,10 +709,16 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "padawan",
+                "children": Array [
+                  "class: ",
+                  "padawan",
+                ],
               },
               "ref": null,
-              "rendered": "padawan",
+              "rendered": Array [
+                "class: ",
+                "padawan",
+              ],
               "type": "h4",
             },
             Object {
@@ -576,10 +726,16 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "padawan",
+                "children": Array [
+                  "passengers: ",
+                  "padawan",
+                ],
               },
               "ref": null,
-              "rendered": "padawan",
+              "rendered": Array [
+                "passengers: ",
+                "padawan",
+              ],
               "type": "h5",
             },
           ],
@@ -626,23 +782,28 @@ ShallowWrapper {
       "children": Array [
         null,
         <div
-          className="person-card"
+          className="card person-card"
 >
           <Button
+                    favorited={undefined}
                     handleFavorite={undefined}
                     name="padawan"
                     section="favorite"
           />
           <h2>
+                    name: 
                     padawan
           </h2>
           <h3>
+                    species: 
                     padawan
           </h3>
           <h4>
+                    homeworld: 
                     padawan
           </h4>
           <h5>
+                    homeworld population: 
                     padawan
           </h5>
 </div>,
@@ -660,24 +821,29 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <Button
+              favorited={undefined}
               handleFavorite={undefined}
               name="padawan"
               section="favorite"
 />,
             <h2>
+              name: 
               padawan
 </h2>,
             <h3>
+              species: 
               padawan
 </h3>,
             <h4>
+              homeworld: 
               padawan
 </h4>,
             <h5>
+              homeworld population: 
               padawan
 </h5>,
           ],
-          "className": "person-card",
+          "className": "card person-card",
         },
         "ref": null,
         "rendered": Array [
@@ -686,6 +852,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
+              "favorited": undefined,
               "handleFavorite": undefined,
               "name": "padawan",
               "section": "favorite",
@@ -699,10 +866,16 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "padawan",
+              "children": Array [
+                "name: ",
+                "padawan",
+              ],
             },
             "ref": null,
-            "rendered": "padawan",
+            "rendered": Array [
+              "name: ",
+              "padawan",
+            ],
             "type": "h2",
           },
           Object {
@@ -710,10 +883,16 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "padawan",
+              "children": Array [
+                "species: ",
+                "padawan",
+              ],
             },
             "ref": null,
-            "rendered": "padawan",
+            "rendered": Array [
+              "species: ",
+              "padawan",
+            ],
             "type": "h3",
           },
           Object {
@@ -721,10 +900,16 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "padawan",
+              "children": Array [
+                "homeworld: ",
+                "padawan",
+              ],
             },
             "ref": null,
-            "rendered": "padawan",
+            "rendered": Array [
+              "homeworld: ",
+              "padawan",
+            ],
             "type": "h4",
           },
           Object {
@@ -732,10 +917,16 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "padawan",
+              "children": Array [
+                "homeworld population: ",
+                "padawan",
+              ],
             },
             "ref": null,
-            "rendered": "padawan",
+            "rendered": Array [
+              "homeworld population: ",
+              "padawan",
+            ],
             "type": "h5",
           },
         ],
@@ -754,23 +945,28 @@ ShallowWrapper {
         "children": Array [
           null,
           <div
-            className="person-card"
+            className="card person-card"
 >
             <Button
+                        favorited={undefined}
                         handleFavorite={undefined}
                         name="padawan"
                         section="favorite"
             />
             <h2>
+                        name: 
                         padawan
             </h2>
             <h3>
+                        species: 
                         padawan
             </h3>
             <h4>
+                        homeworld: 
                         padawan
             </h4>
             <h5>
+                        homeworld population: 
                         padawan
             </h5>
 </div>,
@@ -788,24 +984,29 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <Button
+                favorited={undefined}
                 handleFavorite={undefined}
                 name="padawan"
                 section="favorite"
 />,
               <h2>
+                name: 
                 padawan
 </h2>,
               <h3>
+                species: 
                 padawan
 </h3>,
               <h4>
+                homeworld: 
                 padawan
 </h4>,
               <h5>
+                homeworld population: 
                 padawan
 </h5>,
             ],
-            "className": "person-card",
+            "className": "card person-card",
           },
           "ref": null,
           "rendered": Array [
@@ -814,6 +1015,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "function",
               "props": Object {
+                "favorited": undefined,
                 "handleFavorite": undefined,
                 "name": "padawan",
                 "section": "favorite",
@@ -827,10 +1029,16 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "padawan",
+                "children": Array [
+                  "name: ",
+                  "padawan",
+                ],
               },
               "ref": null,
-              "rendered": "padawan",
+              "rendered": Array [
+                "name: ",
+                "padawan",
+              ],
               "type": "h2",
             },
             Object {
@@ -838,10 +1046,16 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "padawan",
+                "children": Array [
+                  "species: ",
+                  "padawan",
+                ],
               },
               "ref": null,
-              "rendered": "padawan",
+              "rendered": Array [
+                "species: ",
+                "padawan",
+              ],
               "type": "h3",
             },
             Object {
@@ -849,10 +1063,16 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "padawan",
+                "children": Array [
+                  "homeworld: ",
+                  "padawan",
+                ],
               },
               "ref": null,
-              "rendered": "padawan",
+              "rendered": Array [
+                "homeworld: ",
+                "padawan",
+              ],
               "type": "h4",
             },
             Object {
@@ -860,10 +1080,16 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "padawan",
+                "children": Array [
+                  "homeworld population: ",
+                  "padawan",
+                ],
               },
               "ref": null,
-              "rendered": "padawan",
+              "rendered": Array [
+                "homeworld population: ",
+                "padawan",
+              ],
               "type": "h5",
             },
           ],

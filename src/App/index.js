@@ -13,7 +13,7 @@ class App extends Component {
     this.state = {
       currentRandomFilm: {},
       currentSectionData: [],
-      allData: {vehicles: [], planets: [], people: [], favorites: []}
+      allData: {vehicles: [], planets: [], people: [], favorites: [], favoriteCount: 0}
     };
   }
 
@@ -34,7 +34,7 @@ class App extends Component {
 
   handleClickEvent = async (event) => {
     const { name } = event.target;
-    if(Object.values(this.state.allData[name]).length) {
+    if(this.state.allData[name].length || name === 'favorites') {
       this.setStateToExistingData(name);
       return;
     }
@@ -57,18 +57,21 @@ class App extends Component {
 
   handleFavorite = (event) => {
     const { value } = event.target;
+    const currentChosen = this.state.currentSectionData.find(data => data.name === value)
     const favorites = this.state.allData.favorites;
     const favoriteExists = favorites.find(data => data.name === value);
     //includes filter out, if it does spread it in
     //refactor this area
+    currentChosen.favorited = !currentChosen.favorited;
+
     if(favoriteExists) {
       const favoriteIndex = favorites.indexOf(favoriteExists);
       favorites.splice(favoriteIndex, 1);
     } else {
-      const chosenCard = this.state.currentSectionData.find(data => data.name === value)
-      favorites.push(chosenCard)
+      favorites.push(currentChosen)
     }
-    const allData = {...this.state.allData, favorites}
+    const favoriteCount = favorites.length
+    const allData = {...this.state.allData, favorites, favoriteCount}
     
     this.setState({
       allData
@@ -78,19 +81,43 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <nav>
-          <Button section={'people'} handleClickEvent={this.handleClickEvent}/>
-          <Button section={'planets'} handleClickEvent={this.handleClickEvent}/>
-          <Button section={'vehicles'} handleClickEvent={this.handleClickEvent}/>
-          <Button section={'favorites'} handleClickEvent={this.handleClickEvent}/>
-        </nav>
+        <img 
+          src="/assets/cantina.jpg" 
+          alt="background image of cantina" 
+          className="cantina-image"
+        />
+        <div className="nav-container">
+          <nav>
+            <Button 
+              section={'people'} 
+              handleClickEvent={this.handleClickEvent}
+            />
+            <Button 
+              section={'planets'} 
+              handleClickEvent={this.handleClickEvent}
+            />
+            <Button 
+              section={'vehicles'} 
+              handleClickEvent={this.handleClickEvent}
+            />
+            <Button 
+              section={'favorites'} 
+              handleClickEvent={this.handleClickEvent} 
+              favoriteCount={this.state.allData.favoriteCount}
+            />
+          </nav>
+          <img 
+            src="./assets/beerTap.png" 
+            alt="beertap navigation" 
+            className="beer-nav"
+          />
+        </div>
         { 
           this.state.currentRandomFilm && 
           <Film 
             currentRandomFilm={this.state.currentRandomFilm}
           />
         }
-        <img src="./assets/beerTap.png"/>
         {
           this.state.currentSectionData &&
           <CardContainer

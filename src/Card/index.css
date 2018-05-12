@@ -1,0 +1,12 @@
+.card {
+  background-color: black;
+  width: 200px;
+  height: 230px;
+  border: 2px solid #ffd54e;
+  color: #ffd54e;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px; }
+
+h2 {
+  font-size: 1rem; }
