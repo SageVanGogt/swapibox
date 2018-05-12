@@ -28,6 +28,7 @@ ShallowWrapper {
       "children": Array [
         <img
           alt="tv"
+          className="tv-image"
           src="/assets/starwarstv.png"
 />,
         <div
@@ -36,13 +37,17 @@ ShallowWrapper {
           <p>
                     aca
           </p>
-          <h2>
-                    aca
-          </h2>
-          <h4>
-                    aca
-          </h4>
 </div>,
+        <h2
+          className="title"
+>
+          aca
+</h2>,
+        <h4
+          className="year"
+>
+          aca
+</h4>,
       ],
       "className": "film-container",
     },
@@ -54,6 +59,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "alt": "tv",
+          "className": "tv-image",
           "src": "/assets/starwarstv.png",
         },
         "ref": null,
@@ -65,56 +71,48 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": Array [
-            <p>
-              aca
+          "children": <p>
+            aca
 </p>,
-            <h2>
-              aca
-</h2>,
-            <h4>
-              aca
-</h4>,
-          ],
           "className": "scrolling-text",
         },
         "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "aca",
-            },
-            "ref": null,
-            "rendered": "aca",
-            "type": "p",
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "aca",
           },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "aca",
-            },
-            "ref": null,
-            "rendered": "aca",
-            "type": "h2",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "aca",
-            },
-            "ref": null,
-            "rendered": "aca",
-            "type": "h4",
-          },
-        ],
+          "ref": null,
+          "rendered": "aca",
+          "type": "p",
+        },
         "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "aca",
+          "className": "title",
+        },
+        "ref": null,
+        "rendered": "aca",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "aca",
+          "className": "year",
+        },
+        "ref": null,
+        "rendered": "aca",
+        "type": "h4",
       },
     ],
     "type": "div",
@@ -128,6 +126,7 @@ ShallowWrapper {
         "children": Array [
           <img
             alt="tv"
+            className="tv-image"
             src="/assets/starwarstv.png"
 />,
           <div
@@ -136,13 +135,17 @@ ShallowWrapper {
             <p>
                         aca
             </p>
-            <h2>
-                        aca
-            </h2>
-            <h4>
-                        aca
-            </h4>
 </div>,
+          <h2
+            className="title"
+>
+            aca
+</h2>,
+          <h4
+            className="year"
+>
+            aca
+</h4>,
         ],
         "className": "film-container",
       },
@@ -154,6 +157,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "alt": "tv",
+            "className": "tv-image",
             "src": "/assets/starwarstv.png",
           },
           "ref": null,
@@ -165,56 +169,48 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              <p>
-                aca
+            "children": <p>
+              aca
 </p>,
-              <h2>
-                aca
-</h2>,
-              <h4>
-                aca
-</h4>,
-            ],
             "className": "scrolling-text",
           },
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "aca",
-              },
-              "ref": null,
-              "rendered": "aca",
-              "type": "p",
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "aca",
             },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "aca",
-              },
-              "ref": null,
-              "rendered": "aca",
-              "type": "h2",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "aca",
-              },
-              "ref": null,
-              "rendered": "aca",
-              "type": "h4",
-            },
-          ],
+            "ref": null,
+            "rendered": "aca",
+            "type": "p",
+          },
           "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "aca",
+            "className": "title",
+          },
+          "ref": null,
+          "rendered": "aca",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "aca",
+            "className": "year",
+          },
+          "ref": null,
+          "rendered": "aca",
+          "type": "h4",
         },
       ],
       "type": "div",

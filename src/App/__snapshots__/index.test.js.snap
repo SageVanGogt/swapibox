@@ -18,6 +18,11 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
+        <img
+          alt="background image of cantina"
+          className="cantina-image"
+          src="/assets/cantina.jpg"
+/>,
         <div
           className="nav-container"
 >
@@ -35,12 +40,14 @@ ShallowWrapper {
                               section="vehicles"
                     />
                     <Button
+                              favoriteCount={0}
                               handleClickEvent={[Function]}
                               section="favorites"
                     />
           </nav>
           <img
                     alt="beertap navigation"
+                    className="beer-nav"
                     src="./assets/beerTap.png"
           />
 </div>,
@@ -61,6 +68,19 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
+          "alt": "background image of cantina",
+          "className": "cantina-image",
+          "src": "/assets/cantina.jpg",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
           "children": Array [
             <nav>
               <Button
@@ -76,12 +96,14 @@ ShallowWrapper {
                             section="vehicles"
               />
               <Button
+                            favoriteCount={0}
                             handleClickEvent={[Function]}
                             section="favorites"
               />
 </nav>,
             <img
               alt="beertap navigation"
+              className="beer-nav"
               src="./assets/beerTap.png"
 />,
           ],
@@ -108,6 +130,7 @@ ShallowWrapper {
                   section="vehicles"
 />,
                 <Button
+                  favoriteCount={0}
                   handleClickEvent={[Function]}
                   section="favorites"
 />,
@@ -156,6 +179,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "function",
                 "props": Object {
+                  "favoriteCount": 0,
                   "handleClickEvent": [Function],
                   "section": "favorites",
                 },
@@ -172,6 +196,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "alt": "beertap navigation",
+              "className": "beer-nav",
               "src": "./assets/beerTap.png",
             },
             "ref": null,
@@ -214,6 +239,11 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <img
+            alt="background image of cantina"
+            className="cantina-image"
+            src="/assets/cantina.jpg"
+/>,
           <div
             className="nav-container"
 >
@@ -231,12 +261,14 @@ ShallowWrapper {
                                     section="vehicles"
                         />
                         <Button
+                                    favoriteCount={0}
                                     handleClickEvent={[Function]}
                                     section="favorites"
                         />
             </nav>
             <img
                         alt="beertap navigation"
+                        className="beer-nav"
                         src="./assets/beerTap.png"
             />
 </div>,
@@ -257,6 +289,19 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
+            "alt": "background image of cantina",
+            "className": "cantina-image",
+            "src": "/assets/cantina.jpg",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
             "children": Array [
               <nav>
                 <Button
@@ -272,12 +317,14 @@ ShallowWrapper {
                                 section="vehicles"
                 />
                 <Button
+                                favoriteCount={0}
                                 handleClickEvent={[Function]}
                                 section="favorites"
                 />
 </nav>,
               <img
                 alt="beertap navigation"
+                className="beer-nav"
                 src="./assets/beerTap.png"
 />,
             ],
@@ -304,6 +351,7 @@ ShallowWrapper {
                     section="vehicles"
 />,
                   <Button
+                    favoriteCount={0}
                     handleClickEvent={[Function]}
                     section="favorites"
 />,
@@ -352,6 +400,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "function",
                   "props": Object {
+                    "favoriteCount": 0,
                     "handleClickEvent": [Function],
                     "section": "favorites",
                   },
@@ -368,6 +417,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "alt": "beertap navigation",
+                "className": "beer-nav",
                 "src": "./assets/beerTap.png",
               },
               "ref": null,

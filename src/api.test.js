@@ -57,7 +57,8 @@ describe('API', () => {
                           name: 'Luke Skywalker',
                           species: undefined,
                           homeworld: undefined,
-                          homeworldPopulation: undefined 
+                          homeworldPopulation: undefined,
+                          favorited: false 
                         }
       expect(actual[0]).toEqual(expected)
     })
@@ -89,7 +90,8 @@ describe('API', () => {
                         name: "Alderaan", 
                         population: "2000000000", 
                         residents: [undefined, undefined, undefined], 
-                        terrain: "grasslands, mountains"
+                        terrain: "grasslands, mountains",
+                        favorited: false
                         }
       expect(actual[0]).toEqual(expected)
     })

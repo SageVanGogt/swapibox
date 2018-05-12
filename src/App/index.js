@@ -81,7 +81,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <img src="/assets/cantina.jpg" alt="background image of cantina" className="cantina-image"/>
+        <img 
+          src="/assets/cantina.jpg" 
+          alt="background image of cantina" 
+          className="cantina-image"
+        />
         <div className="nav-container">
           <nav>
             <Button 
@@ -102,7 +106,11 @@ class App extends Component {
               favoriteCount={this.state.allData.favoriteCount}
             />
           </nav>
-          <img src="./assets/beerTap.png" alt="beertap navigation" className="beer-nav"/>
+          <img 
+            src="./assets/beerTap.png" 
+            alt="beertap navigation" 
+            className="beer-nav"
+          />
         </div>
         { 
           this.state.currentRandomFilm && 

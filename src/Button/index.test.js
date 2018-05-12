@@ -16,7 +16,7 @@ describe('Button component', () => {
     expect(actual).toMatchSnapshot();
   });
 
-  it('should call handleClickEvent onClick', () => {
+  it('should call handleClickEvent onClick if it is a section button', () => {
     const handleClickEvent = jest.fn();
     const mockEvent = {target: {name: 'vehicles'}};
     const wrapper = shallow(<Button 
@@ -26,5 +26,26 @@ describe('Button component', () => {
 
     wrapper.find('button').simulate('click', mockEvent);
     expect(handleClickEvent).toBeCalledWith(mockEvent);
+  });
+
+  it('should call handleFavorite onClick if it is a favorite button', () => {
+    const handleFavorite = jest.fn();
+    const mockEvent = {target: {name: 'favorite'}};
+    const wrapper = shallow(<Button 
+      section={'favorite'} 
+      handleFavorite={handleFavorite}
+    />);
+
+    wrapper.find('button').simulate('click', mockEvent);
+    expect(handleFavorite).toBeCalledWith(mockEvent);
+  });
+
+  it('should have a favorite-active class if favorited prop value is true', () => {
+    const wrapper = shallow(<Button 
+      section={'favorite'} 
+      favorited={true}
+    />);
+    
+    expect(wrapper.find('button').hasClass('favorite-active')).toBe(true);
   });
 })
