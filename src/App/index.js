@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Button from './../Button/index';
 import Film from './../Film/index';
 import CardContainer from './../CardContainer/index';
-import fetchApiData from './../apiCalls/api';
+import { fetchApiData, fetchFilm } from './../apiCalls/api';
 import { getRandomFilm } from './../helper';
 import './index.css';
 
@@ -18,24 +18,11 @@ class App extends Component {
   }
 
   async componentDidMount() {
-    const film = await this.fetchFilm();
+    const film = await fetchFilm();
     const currentRandomFilm = await getRandomFilm(film);
     this.setState({
       currentRandomFilm
     })
-  }
-
-  fetchFilm = async () => {
-    try {
-      const url = 'https://swapi.co/api/films/';
-      const response = await fetch(url);
-      const film = await response.json();
-      return film;
-    } catch(error) {
-      const error = 'We had an issue grabbing you movie';
-      const currentRandomFilm = error;
-      this.setState({currentRandomFilm});
-    }
   }
 
   handleClickEvent = async (event) => {
