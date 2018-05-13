@@ -19,7 +19,7 @@ const fetchApiData = async (name) => {
         break;
     }
   } catch(er) {
-    let error = new Error('fetch failed');
+    let error = 'fetch failed';
     throw error;
   }
 }
