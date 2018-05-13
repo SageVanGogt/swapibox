@@ -8,7 +8,7 @@
   font-family: 'Righteous', 'cursive'; }
 
 .favorites-button:active, .planets-button:active, .people-button:active, .vehicles-button:active {
-  background-color: chartreuse; }
+  background-color: red; }
 
 .favorites-button {
   width: 130px;

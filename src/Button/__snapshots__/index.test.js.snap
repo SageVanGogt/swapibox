@@ -35,7 +35,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           undefined,
-          undefined,
+          false,
         ],
         "className": "undefined-button undefined",
         "name": undefined,
@@ -45,7 +45,7 @@ ShallowWrapper {
       "ref": null,
       "rendered": Array [
         undefined,
-        undefined,
+        false,
       ],
       "type": "button",
     },
@@ -75,7 +75,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             undefined,
-            undefined,
+            false,
           ],
           "className": "undefined-button undefined",
           "name": undefined,
@@ -85,7 +85,7 @@ ShallowWrapper {
         "ref": null,
         "rendered": Array [
           undefined,
-          undefined,
+          false,
         ],
         "type": "button",
       },
@@ -139,7 +139,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           "vehicles",
-          undefined,
+          false,
         ],
         "className": "vehicles-button undefined",
         "name": "vehicles",
@@ -149,7 +149,7 @@ ShallowWrapper {
       "ref": null,
       "rendered": Array [
         "vehicles",
-        undefined,
+        false,
       ],
       "type": "button",
     },
@@ -179,7 +179,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             "vehicles",
-            undefined,
+            false,
           ],
           "className": "vehicles-button undefined",
           "name": "vehicles",
@@ -189,7 +189,7 @@ ShallowWrapper {
         "ref": null,
         "rendered": Array [
           "vehicles",
-          undefined,
+          false,
         ],
         "type": "button",
       },

@@ -98,11 +98,13 @@ class App extends Component {
               favoriteCount={this.state.allData.favoriteCount}
             />
           </nav>
-          {/* <img 
-            src="./assets/beerTap.png" 
-            alt="beertap navigation" 
-            className="beer-nav"
-          /> */}
+          <embed 
+            src="/assets/Cantina band.mp3"
+            loop="false" 
+            autostart="true" 
+            hidden="true" 
+            className="music-player"
+          />
         </div>
         { 
           this.state.currentRandomFilm && 
