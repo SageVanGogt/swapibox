@@ -1,7 +1,11 @@
 .favorites-button, .planets-button, .people-button, .vehicles-button {
-  background-color: transparent;
-  border: none;
-  color: white;
+  border: 3px solid #ffd54e;
+  color: #ffd54e;
+  background-color: #3b444b;
+  margin: 0px 30px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: 'Righteous', 'cursive';  
 }
 
 .favorites-button:active, .planets-button:active, .people-button:active, .vehicles-button:active {
@@ -9,31 +13,24 @@
 }
 
 .favorites-button {
-  background-color: black;
-  border: none;
-  color: white;
-  padding: 40px;
+  width: 130px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
-  border-radius: 50%
 }
 
 .planets-button, .people-button, .vehicles-button {
-  background-color: black;
-  border: none;
-  color: white;
-  padding: 40px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
-  border-radius: 50%
 }
 
 .favorite-active {
-  background-color: blue;
+  background-color: red;
+}
+
+.favorite-counter {
+  color: red;
 }
