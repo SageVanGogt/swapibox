@@ -21,7 +21,8 @@ const CardContainer = (props) => {
 }
 
 CardContainer.propTypes = {
-  currentSectionData: PropTypes.array.isRequired
+  currentSectionData: PropTypes.array.isRequired,
+  handleFavorite: PropTypes.func
 }
 
 export default CardContainer

@@ -82,7 +82,8 @@ Card.propTypes = {
   residents: PropTypes.array,
   model: PropTypes.string,
   vehicleClass: PropTypes.string,
-  passengerCount: PropTypes.string
+  passengerCount: PropTypes.string,
+  favorited: PropTypes.bool
 }
 
 export default Card;

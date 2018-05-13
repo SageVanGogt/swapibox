@@ -106,4 +106,50 @@ describe('API', () => {
       expect(getVehicleDataRes).toEqual(expectedError);
     });
   })
+
+  describe.skip('addGrocery', () => {
+    beforeEach(() => {
+      window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
+        status: 200,
+        json: () => Promise.resolve({
+          groceries: mockGroceries,
+        }),
+      }))
+    })
+  
+    it('fetch is called with the correct params', async () => {
+      const mockGrocery = {name: 'Oranges', quantity: 3}
+      const expected = [
+        "/api/v1/groceries", 
+        {
+          body: JSON.stringify({ grocery: mockGrocery }),
+          headers: {
+            "Content-Type": "application/json"
+          },
+          method: "POST"
+        }
+      ]
+  
+      await addGrocery(mockGrocery)
+      expect(window.fetch).toHaveBeenCalledWith(...expected)
+    })
+  
+    it('returns an object if status code is ok', async () => {
+      const mockGrocery = {name: 'Oranges', quantity: 3}
+      const mockGroceries = [
+        {id: 1, name: 'Pineapples', quantity: 10},
+        {id: 2, name: 'Oranges', quantity: 3}
+      ]
+  
+      await expect(addGrocery(mockGrocery)).resolves.toEqual({groceries: mockGroceries})
+    })
+  
+    it('throws an error if status code is not ok', async () => {
+      window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
+        status: 500,
+      }))
+  
+      await expect(addGrocery()).rejects.toEqual(Error('Error adding grocery'))
+    })
+  })
 })
