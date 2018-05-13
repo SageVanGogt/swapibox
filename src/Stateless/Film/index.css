@@ -66,9 +66,14 @@
   padding: 0; }
 
 .title, .year {
+  background: none;
   font-family: 'Righteous', 'cursive';
-  position: absolute;
+  position: relative;
   color: #ffd54e; }
 
 .year {
-  top: 20px; }
+  line-height: 5px;
+  font-size: 1.5rem; }
+
+.title {
+  font-size: 2rem; }

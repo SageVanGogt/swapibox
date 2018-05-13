@@ -5,24 +5,25 @@ import './index.css';
 
 const Card = (props) => {
   const { 
-          name, 
-          species, 
-          homeworld, 
-          homeworldPopulation, 
-          terrain, 
-          climate, 
-          population, 
-          residents,
-          model, 
-          vehicleClass, 
-          passengerCount,
-          favorited
-        } = props;
+    name, 
+    species, 
+    homeworld, 
+    homeworldPopulation, 
+    terrain, 
+    climate, 
+    population, 
+    residents,
+    model, 
+    vehicleClass, 
+    passengerCount,
+    favorited,
+    handleFavorite
+  } = props;
   const planetCard = residents ? (
     <div className="card planet-card">
       <Button 
         section={'favorite'}
-        handleFavorite={props.handleFavorite}
+        handleFavorite={handleFavorite}
         name={name}
         favorited={favorited}
       />
@@ -61,15 +62,14 @@ const Card = (props) => {
     </div>
   ): null; 
 
-
-  return(
+  return (
     <div className="category-card">
       {vehicleCard}
       {personCard}
       {planetCard}
     </div>
   );
-}
+};
 
 Card.propTypes = {
   name: PropTypes.string.isRequired,
@@ -84,6 +84,6 @@ Card.propTypes = {
   vehicleClass: PropTypes.string,
   passengerCount: PropTypes.string,
   favorited: PropTypes.bool
-}
+};
 
 export default Card;
