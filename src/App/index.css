@@ -21,3 +21,6 @@
 
 nav {
   display: flex; }
+
+.music-player {
+  visibility: hidden; }

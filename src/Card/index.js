@@ -26,11 +26,11 @@ const Card = (props) => {
         name={name}
         favorited={favorited}
       />
-      <h2>name: {name}</h2>
-      <h3>terrain: {terrain}</h3>
-      <h4>population: {population}</h4>
-      <h5>climate: {climate}</h5>
-      <h4>residents: {residents}</h4>
+      <h2><span className='card-key'>name:</span> {name}</h2>
+      <h3><span className='card-key'>terrain: </span>{terrain}</h3>
+      <h4><span className='card-key'>population: </span>{population}</h4>
+      <h5><span className='card-key'>climate: </span>{climate}</h5>
+      <h4><span className='card-key'>residents: </span>{residents}</h4>
     </div>
   ) : null;
   const vehicleCard = vehicleClass ? (
@@ -41,10 +41,10 @@ const Card = (props) => {
         name={name}
         favorited={favorited}
       />
-      <h2>name: {name}</h2>
-      <h3>model: {model}</h3>
-      <h4>class: {vehicleClass}</h4>
-      <h5>passengers: {passengerCount}</h5>
+      <h2><span className='card-key'>name: </span>{name}</h2>
+      <h3><span className='card-key'>model: </span>{model}</h3>
+      <h4><span className='card-key'>class: </span>{vehicleClass}</h4>
+      <h5><span className='card-key'>passengers: </span>{passengerCount}</h5>
     </div>
   ) : null;
   const personCard = homeworld ? (
@@ -54,10 +54,10 @@ const Card = (props) => {
         name={name}
         favorited={favorited}
       />
-      <h2>name: {name}</h2>
-      <h3>species: {species}</h3>
-      <h4>homeworld: {homeworld}</h4>
-      <h5>homeworld population: {homeworldPopulation}</h5>
+      <h2><span className='card-key'>name: </span>{name}</h2>
+      <h3><span className='card-key'>species: </span>{species}</h3>
+      <h4><span className='card-key'>homeworld: </span>{homeworld}</h4>
+      <h5><span className='card-key'>homeworld population: </span>{homeworldPopulation}</h5>
     </div>
   ): null; 
 

@@ -4,4 +4,9 @@
   height: 430px;
   grid-area: e;
   justify-content: space-around;
-  overflow: scroll; }
+  overflow: scroll;
+  background-color: rgba(56, 60, 74, 0.5);
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 20px; }

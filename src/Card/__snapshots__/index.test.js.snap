@@ -36,23 +36,44 @@ ShallowWrapper {
                     section="favorite"
           />
           <h2>
-                    name: 
+                    <span
+                              className="card-key"
+                    >
+                              name:
+                    </span>
+                     
                     padawan
           </h2>
           <h3>
-                    terrain: 
+                    <span
+                              className="card-key"
+                    >
+                              terrain: 
+                    </span>
                     padawan
           </h3>
           <h4>
-                    population: 
+                    <span
+                              className="card-key"
+                    >
+                              population: 
+                    </span>
                     padawan
           </h4>
           <h5>
-                    climate: 
+                    <span
+                              className="card-key"
+                    >
+                              climate: 
+                    </span>
                     padawan
           </h5>
           <h4>
-                    residents: 
+                    <span
+                              className="card-key"
+                    >
+                              residents: 
+                    </span>
                     residents
           </h4>
 </div>,
@@ -76,23 +97,44 @@ ShallowWrapper {
               section="favorite"
 />,
             <h2>
-              name: 
+              <span
+                            className="card-key"
+              >
+                            name:
+              </span>
+               
               padawan
 </h2>,
             <h3>
-              terrain: 
+              <span
+                            className="card-key"
+              >
+                            terrain: 
+              </span>
               padawan
 </h3>,
             <h4>
-              population: 
+              <span
+                            className="card-key"
+              >
+                            population: 
+              </span>
               padawan
 </h4>,
             <h5>
-              climate: 
+              <span
+                            className="card-key"
+              >
+                            climate: 
+              </span>
               padawan
 </h5>,
             <h4>
-              residents: 
+              <span
+                            className="card-key"
+              >
+                            residents: 
+              </span>
               residents
 </h4>,
           ],
@@ -120,13 +162,30 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                "name: ",
+                <span
+                  className="card-key"
+>
+                  name:
+</span>,
+                " ",
                 "padawan",
               ],
             },
             "ref": null,
             "rendered": Array [
-              "name: ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "name:",
+                  "className": "card-key",
+                },
+                "ref": null,
+                "rendered": "name:",
+                "type": "span",
+              },
+              " ",
               "padawan",
             ],
             "type": "h2",
@@ -137,13 +196,28 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                "terrain: ",
+                <span
+                  className="card-key"
+>
+                  terrain: 
+</span>,
                 "padawan",
               ],
             },
             "ref": null,
             "rendered": Array [
-              "terrain: ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "terrain: ",
+                  "className": "card-key",
+                },
+                "ref": null,
+                "rendered": "terrain: ",
+                "type": "span",
+              },
               "padawan",
             ],
             "type": "h3",
@@ -154,13 +228,28 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                "population: ",
+                <span
+                  className="card-key"
+>
+                  population: 
+</span>,
                 "padawan",
               ],
             },
             "ref": null,
             "rendered": Array [
-              "population: ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "population: ",
+                  "className": "card-key",
+                },
+                "ref": null,
+                "rendered": "population: ",
+                "type": "span",
+              },
               "padawan",
             ],
             "type": "h4",
@@ -171,13 +260,28 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                "climate: ",
+                <span
+                  className="card-key"
+>
+                  climate: 
+</span>,
                 "padawan",
               ],
             },
             "ref": null,
             "rendered": Array [
-              "climate: ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "climate: ",
+                  "className": "card-key",
+                },
+                "ref": null,
+                "rendered": "climate: ",
+                "type": "span",
+              },
               "padawan",
             ],
             "type": "h5",
@@ -188,13 +292,28 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                "residents: ",
+                <span
+                  className="card-key"
+>
+                  residents: 
+</span>,
                 "residents",
               ],
             },
             "ref": null,
             "rendered": Array [
-              "residents: ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "residents: ",
+                  "className": "card-key",
+                },
+                "ref": null,
+                "rendered": "residents: ",
+                "type": "span",
+              },
               "residents",
             ],
             "type": "h4",
@@ -224,23 +343,44 @@ ShallowWrapper {
                         section="favorite"
             />
             <h2>
-                        name: 
+                        <span
+                                    className="card-key"
+                        >
+                                    name:
+                        </span>
+                         
                         padawan
             </h2>
             <h3>
-                        terrain: 
+                        <span
+                                    className="card-key"
+                        >
+                                    terrain: 
+                        </span>
                         padawan
             </h3>
             <h4>
-                        population: 
+                        <span
+                                    className="card-key"
+                        >
+                                    population: 
+                        </span>
                         padawan
             </h4>
             <h5>
-                        climate: 
+                        <span
+                                    className="card-key"
+                        >
+                                    climate: 
+                        </span>
                         padawan
             </h5>
             <h4>
-                        residents: 
+                        <span
+                                    className="card-key"
+                        >
+                                    residents: 
+                        </span>
                         residents
             </h4>
 </div>,
@@ -264,23 +404,44 @@ ShallowWrapper {
                 section="favorite"
 />,
               <h2>
-                name: 
+                <span
+                                className="card-key"
+                >
+                                name:
+                </span>
+                 
                 padawan
 </h2>,
               <h3>
-                terrain: 
+                <span
+                                className="card-key"
+                >
+                                terrain: 
+                </span>
                 padawan
 </h3>,
               <h4>
-                population: 
+                <span
+                                className="card-key"
+                >
+                                population: 
+                </span>
                 padawan
 </h4>,
               <h5>
-                climate: 
+                <span
+                                className="card-key"
+                >
+                                climate: 
+                </span>
                 padawan
 </h5>,
               <h4>
-                residents: 
+                <span
+                                className="card-key"
+                >
+                                residents: 
+                </span>
                 residents
 </h4>,
             ],
@@ -308,13 +469,30 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "name: ",
+                  <span
+                    className="card-key"
+>
+                    name:
+</span>,
+                  " ",
                   "padawan",
                 ],
               },
               "ref": null,
               "rendered": Array [
-                "name: ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "name:",
+                    "className": "card-key",
+                  },
+                  "ref": null,
+                  "rendered": "name:",
+                  "type": "span",
+                },
+                " ",
                 "padawan",
               ],
               "type": "h2",
@@ -325,13 +503,28 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "terrain: ",
+                  <span
+                    className="card-key"
+>
+                    terrain: 
+</span>,
                   "padawan",
                 ],
               },
               "ref": null,
               "rendered": Array [
-                "terrain: ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "terrain: ",
+                    "className": "card-key",
+                  },
+                  "ref": null,
+                  "rendered": "terrain: ",
+                  "type": "span",
+                },
                 "padawan",
               ],
               "type": "h3",
@@ -342,13 +535,28 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "population: ",
+                  <span
+                    className="card-key"
+>
+                    population: 
+</span>,
                   "padawan",
                 ],
               },
               "ref": null,
               "rendered": Array [
-                "population: ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "population: ",
+                    "className": "card-key",
+                  },
+                  "ref": null,
+                  "rendered": "population: ",
+                  "type": "span",
+                },
                 "padawan",
               ],
               "type": "h4",
@@ -359,13 +567,28 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "climate: ",
+                  <span
+                    className="card-key"
+>
+                    climate: 
+</span>,
                   "padawan",
                 ],
               },
               "ref": null,
               "rendered": Array [
-                "climate: ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "climate: ",
+                    "className": "card-key",
+                  },
+                  "ref": null,
+                  "rendered": "climate: ",
+                  "type": "span",
+                },
                 "padawan",
               ],
               "type": "h5",
@@ -376,13 +599,28 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "residents: ",
+                  <span
+                    className="card-key"
+>
+                    residents: 
+</span>,
                   "residents",
                 ],
               },
               "ref": null,
               "rendered": Array [
-                "residents: ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "residents: ",
+                    "className": "card-key",
+                  },
+                  "ref": null,
+                  "rendered": "residents: ",
+                  "type": "span",
+                },
                 "residents",
               ],
               "type": "h4",
@@ -437,19 +675,35 @@ ShallowWrapper {
                     section="favorite"
           />
           <h2>
-                    name: 
+                    <span
+                              className="card-key"
+                    >
+                              name: 
+                    </span>
                     padawan
           </h2>
           <h3>
-                    model: 
+                    <span
+                              className="card-key"
+                    >
+                              model: 
+                    </span>
                     padawan
           </h3>
           <h4>
-                    class: 
+                    <span
+                              className="card-key"
+                    >
+                              class: 
+                    </span>
                     padawan
           </h4>
           <h5>
-                    passengers: 
+                    <span
+                              className="card-key"
+                    >
+                              passengers: 
+                    </span>
                     padawan
           </h5>
 </div>,
@@ -473,19 +727,35 @@ ShallowWrapper {
               section="favorite"
 />,
             <h2>
-              name: 
+              <span
+                            className="card-key"
+              >
+                            name: 
+              </span>
               padawan
 </h2>,
             <h3>
-              model: 
+              <span
+                            className="card-key"
+              >
+                            model: 
+              </span>
               padawan
 </h3>,
             <h4>
-              class: 
+              <span
+                            className="card-key"
+              >
+                            class: 
+              </span>
               padawan
 </h4>,
             <h5>
-              passengers: 
+              <span
+                            className="card-key"
+              >
+                            passengers: 
+              </span>
               padawan
 </h5>,
           ],
@@ -513,13 +783,28 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                "name: ",
+                <span
+                  className="card-key"
+>
+                  name: 
+</span>,
                 "padawan",
               ],
             },
             "ref": null,
             "rendered": Array [
-              "name: ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "name: ",
+                  "className": "card-key",
+                },
+                "ref": null,
+                "rendered": "name: ",
+                "type": "span",
+              },
               "padawan",
             ],
             "type": "h2",
@@ -530,13 +815,28 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                "model: ",
+                <span
+                  className="card-key"
+>
+                  model: 
+</span>,
                 "padawan",
               ],
             },
             "ref": null,
             "rendered": Array [
-              "model: ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "model: ",
+                  "className": "card-key",
+                },
+                "ref": null,
+                "rendered": "model: ",
+                "type": "span",
+              },
               "padawan",
             ],
             "type": "h3",
@@ -547,13 +847,28 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                "class: ",
+                <span
+                  className="card-key"
+>
+                  class: 
+</span>,
                 "padawan",
               ],
             },
             "ref": null,
             "rendered": Array [
-              "class: ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "class: ",
+                  "className": "card-key",
+                },
+                "ref": null,
+                "rendered": "class: ",
+                "type": "span",
+              },
               "padawan",
             ],
             "type": "h4",
@@ -564,13 +879,28 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                "passengers: ",
+                <span
+                  className="card-key"
+>
+                  passengers: 
+</span>,
                 "padawan",
               ],
             },
             "ref": null,
             "rendered": Array [
-              "passengers: ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "passengers: ",
+                  "className": "card-key",
+                },
+                "ref": null,
+                "rendered": "passengers: ",
+                "type": "span",
+              },
               "padawan",
             ],
             "type": "h5",
@@ -600,19 +930,35 @@ ShallowWrapper {
                         section="favorite"
             />
             <h2>
-                        name: 
+                        <span
+                                    className="card-key"
+                        >
+                                    name: 
+                        </span>
                         padawan
             </h2>
             <h3>
-                        model: 
+                        <span
+                                    className="card-key"
+                        >
+                                    model: 
+                        </span>
                         padawan
             </h3>
             <h4>
-                        class: 
+                        <span
+                                    className="card-key"
+                        >
+                                    class: 
+                        </span>
                         padawan
             </h4>
             <h5>
-                        passengers: 
+                        <span
+                                    className="card-key"
+                        >
+                                    passengers: 
+                        </span>
                         padawan
             </h5>
 </div>,
@@ -636,19 +982,35 @@ ShallowWrapper {
                 section="favorite"
 />,
               <h2>
-                name: 
+                <span
+                                className="card-key"
+                >
+                                name: 
+                </span>
                 padawan
 </h2>,
               <h3>
-                model: 
+                <span
+                                className="card-key"
+                >
+                                model: 
+                </span>
                 padawan
 </h3>,
               <h4>
-                class: 
+                <span
+                                className="card-key"
+                >
+                                class: 
+                </span>
                 padawan
 </h4>,
               <h5>
-                passengers: 
+                <span
+                                className="card-key"
+                >
+                                passengers: 
+                </span>
                 padawan
 </h5>,
             ],
@@ -676,13 +1038,28 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "name: ",
+                  <span
+                    className="card-key"
+>
+                    name: 
+</span>,
                   "padawan",
                 ],
               },
               "ref": null,
               "rendered": Array [
-                "name: ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "name: ",
+                    "className": "card-key",
+                  },
+                  "ref": null,
+                  "rendered": "name: ",
+                  "type": "span",
+                },
                 "padawan",
               ],
               "type": "h2",
@@ -693,13 +1070,28 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "model: ",
+                  <span
+                    className="card-key"
+>
+                    model: 
+</span>,
                   "padawan",
                 ],
               },
               "ref": null,
               "rendered": Array [
-                "model: ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "model: ",
+                    "className": "card-key",
+                  },
+                  "ref": null,
+                  "rendered": "model: ",
+                  "type": "span",
+                },
                 "padawan",
               ],
               "type": "h3",
@@ -710,13 +1102,28 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "class: ",
+                  <span
+                    className="card-key"
+>
+                    class: 
+</span>,
                   "padawan",
                 ],
               },
               "ref": null,
               "rendered": Array [
-                "class: ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "class: ",
+                    "className": "card-key",
+                  },
+                  "ref": null,
+                  "rendered": "class: ",
+                  "type": "span",
+                },
                 "padawan",
               ],
               "type": "h4",
@@ -727,13 +1134,28 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "passengers: ",
+                  <span
+                    className="card-key"
+>
+                    passengers: 
+</span>,
                   "padawan",
                 ],
               },
               "ref": null,
               "rendered": Array [
-                "passengers: ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "passengers: ",
+                    "className": "card-key",
+                  },
+                  "ref": null,
+                  "rendered": "passengers: ",
+                  "type": "span",
+                },
                 "padawan",
               ],
               "type": "h5",
@@ -791,19 +1213,35 @@ ShallowWrapper {
                     section="favorite"
           />
           <h2>
-                    name: 
+                    <span
+                              className="card-key"
+                    >
+                              name: 
+                    </span>
                     padawan
           </h2>
           <h3>
-                    species: 
+                    <span
+                              className="card-key"
+                    >
+                              species: 
+                    </span>
                     padawan
           </h3>
           <h4>
-                    homeworld: 
+                    <span
+                              className="card-key"
+                    >
+                              homeworld: 
+                    </span>
                     padawan
           </h4>
           <h5>
-                    homeworld population: 
+                    <span
+                              className="card-key"
+                    >
+                              homeworld population: 
+                    </span>
                     padawan
           </h5>
 </div>,
@@ -827,19 +1265,35 @@ ShallowWrapper {
               section="favorite"
 />,
             <h2>
-              name: 
+              <span
+                            className="card-key"
+              >
+                            name: 
+              </span>
               padawan
 </h2>,
             <h3>
-              species: 
+              <span
+                            className="card-key"
+              >
+                            species: 
+              </span>
               padawan
 </h3>,
             <h4>
-              homeworld: 
+              <span
+                            className="card-key"
+              >
+                            homeworld: 
+              </span>
               padawan
 </h4>,
             <h5>
-              homeworld population: 
+              <span
+                            className="card-key"
+              >
+                            homeworld population: 
+              </span>
               padawan
 </h5>,
           ],
@@ -867,13 +1321,28 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                "name: ",
+                <span
+                  className="card-key"
+>
+                  name: 
+</span>,
                 "padawan",
               ],
             },
             "ref": null,
             "rendered": Array [
-              "name: ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "name: ",
+                  "className": "card-key",
+                },
+                "ref": null,
+                "rendered": "name: ",
+                "type": "span",
+              },
               "padawan",
             ],
             "type": "h2",
@@ -884,13 +1353,28 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                "species: ",
+                <span
+                  className="card-key"
+>
+                  species: 
+</span>,
                 "padawan",
               ],
             },
             "ref": null,
             "rendered": Array [
-              "species: ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "species: ",
+                  "className": "card-key",
+                },
+                "ref": null,
+                "rendered": "species: ",
+                "type": "span",
+              },
               "padawan",
             ],
             "type": "h3",
@@ -901,13 +1385,28 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                "homeworld: ",
+                <span
+                  className="card-key"
+>
+                  homeworld: 
+</span>,
                 "padawan",
               ],
             },
             "ref": null,
             "rendered": Array [
-              "homeworld: ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "homeworld: ",
+                  "className": "card-key",
+                },
+                "ref": null,
+                "rendered": "homeworld: ",
+                "type": "span",
+              },
               "padawan",
             ],
             "type": "h4",
@@ -918,13 +1417,28 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                "homeworld population: ",
+                <span
+                  className="card-key"
+>
+                  homeworld population: 
+</span>,
                 "padawan",
               ],
             },
             "ref": null,
             "rendered": Array [
-              "homeworld population: ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "homeworld population: ",
+                  "className": "card-key",
+                },
+                "ref": null,
+                "rendered": "homeworld population: ",
+                "type": "span",
+              },
               "padawan",
             ],
             "type": "h5",
@@ -954,19 +1468,35 @@ ShallowWrapper {
                         section="favorite"
             />
             <h2>
-                        name: 
+                        <span
+                                    className="card-key"
+                        >
+                                    name: 
+                        </span>
                         padawan
             </h2>
             <h3>
-                        species: 
+                        <span
+                                    className="card-key"
+                        >
+                                    species: 
+                        </span>
                         padawan
             </h3>
             <h4>
-                        homeworld: 
+                        <span
+                                    className="card-key"
+                        >
+                                    homeworld: 
+                        </span>
                         padawan
             </h4>
             <h5>
-                        homeworld population: 
+                        <span
+                                    className="card-key"
+                        >
+                                    homeworld population: 
+                        </span>
                         padawan
             </h5>
 </div>,
@@ -990,19 +1520,35 @@ ShallowWrapper {
                 section="favorite"
 />,
               <h2>
-                name: 
+                <span
+                                className="card-key"
+                >
+                                name: 
+                </span>
                 padawan
 </h2>,
               <h3>
-                species: 
+                <span
+                                className="card-key"
+                >
+                                species: 
+                </span>
                 padawan
 </h3>,
               <h4>
-                homeworld: 
+                <span
+                                className="card-key"
+                >
+                                homeworld: 
+                </span>
                 padawan
 </h4>,
               <h5>
-                homeworld population: 
+                <span
+                                className="card-key"
+                >
+                                homeworld population: 
+                </span>
                 padawan
 </h5>,
             ],
@@ -1030,13 +1576,28 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "name: ",
+                  <span
+                    className="card-key"
+>
+                    name: 
+</span>,
                   "padawan",
                 ],
               },
               "ref": null,
               "rendered": Array [
-                "name: ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "name: ",
+                    "className": "card-key",
+                  },
+                  "ref": null,
+                  "rendered": "name: ",
+                  "type": "span",
+                },
                 "padawan",
               ],
               "type": "h2",
@@ -1047,13 +1608,28 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "species: ",
+                  <span
+                    className="card-key"
+>
+                    species: 
+</span>,
                   "padawan",
                 ],
               },
               "ref": null,
               "rendered": Array [
-                "species: ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "species: ",
+                    "className": "card-key",
+                  },
+                  "ref": null,
+                  "rendered": "species: ",
+                  "type": "span",
+                },
                 "padawan",
               ],
               "type": "h3",
@@ -1064,13 +1640,28 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "homeworld: ",
+                  <span
+                    className="card-key"
+>
+                    homeworld: 
+</span>,
                   "padawan",
                 ],
               },
               "ref": null,
               "rendered": Array [
-                "homeworld: ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "homeworld: ",
+                    "className": "card-key",
+                  },
+                  "ref": null,
+                  "rendered": "homeworld: ",
+                  "type": "span",
+                },
                 "padawan",
               ],
               "type": "h4",
@@ -1081,13 +1672,28 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "homeworld population: ",
+                  <span
+                    className="card-key"
+>
+                    homeworld population: 
+</span>,
                   "padawan",
                 ],
               },
               "ref": null,
               "rendered": Array [
-                "homeworld population: ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "homeworld population: ",
+                    "className": "card-key",
+                  },
+                  "ref": null,
+                  "rendered": "homeworld population: ",
+                  "type": "span",
+                },
                 "padawan",
               ],
               "type": "h5",

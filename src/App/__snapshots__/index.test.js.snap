@@ -19,7 +19,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <img
-          alt="background image of cantina"
+          alt="cantina"
           className="cantina-image"
           src="/assets/cantina.jpg"
 />,
@@ -45,10 +45,12 @@ ShallowWrapper {
                               section="favorites"
                     />
           </nav>
-          <img
-                    alt="beertap navigation"
-                    className="beer-nav"
-                    src="./assets/beerTap.png"
+          <embed
+                    autostart="true"
+                    className="music-player"
+                    hidden="true"
+                    loop="false"
+                    src="/assets/Cantina band.mp3"
           />
 </div>,
         <Film
@@ -68,7 +70,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "alt": "background image of cantina",
+          "alt": "cantina",
           "className": "cantina-image",
           "src": "/assets/cantina.jpg",
         },
@@ -101,10 +103,12 @@ ShallowWrapper {
                             section="favorites"
               />
 </nav>,
-            <img
-              alt="beertap navigation"
-              className="beer-nav"
-              src="./assets/beerTap.png"
+            <embed
+              autostart="true"
+              className="music-player"
+              hidden="true"
+              loop="false"
+              src="/assets/Cantina band.mp3"
 />,
           ],
           "className": "nav-container",
@@ -195,13 +199,15 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "alt": "beertap navigation",
-              "className": "beer-nav",
-              "src": "./assets/beerTap.png",
+              "autostart": "true",
+              "className": "music-player",
+              "hidden": "true",
+              "loop": "false",
+              "src": "/assets/Cantina band.mp3",
             },
             "ref": null,
             "rendered": null,
-            "type": "img",
+            "type": "embed",
           },
         ],
         "type": "div",
@@ -240,7 +246,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <img
-            alt="background image of cantina"
+            alt="cantina"
             className="cantina-image"
             src="/assets/cantina.jpg"
 />,
@@ -266,10 +272,12 @@ ShallowWrapper {
                                     section="favorites"
                         />
             </nav>
-            <img
-                        alt="beertap navigation"
-                        className="beer-nav"
-                        src="./assets/beerTap.png"
+            <embed
+                        autostart="true"
+                        className="music-player"
+                        hidden="true"
+                        loop="false"
+                        src="/assets/Cantina band.mp3"
             />
 </div>,
           <Film
@@ -289,7 +297,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "alt": "background image of cantina",
+            "alt": "cantina",
             "className": "cantina-image",
             "src": "/assets/cantina.jpg",
           },
@@ -322,10 +330,12 @@ ShallowWrapper {
                                 section="favorites"
                 />
 </nav>,
-              <img
-                alt="beertap navigation"
-                className="beer-nav"
-                src="./assets/beerTap.png"
+              <embed
+                autostart="true"
+                className="music-player"
+                hidden="true"
+                loop="false"
+                src="/assets/Cantina band.mp3"
 />,
             ],
             "className": "nav-container",
@@ -416,13 +426,15 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "alt": "beertap navigation",
-                "className": "beer-nav",
-                "src": "./assets/beerTap.png",
+                "autostart": "true",
+                "className": "music-player",
+                "hidden": "true",
+                "loop": "false",
+                "src": "/assets/Cantina band.mp3",
               },
               "ref": null,
               "rendered": null,
-              "type": "img",
+              "type": "embed",
             },
           ],
           "type": "div",
@@ -460,6 +472,7 @@ ShallowWrapper {
         "enableComponentDidUpdateOnSetState": true,
       },
     },
+    "disableLifecycleMethods": true,
   },
 }
 `;

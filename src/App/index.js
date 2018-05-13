@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Button from './../Button/index';
 import Film from './../Film/index';
 import CardContainer from './../CardContainer/index';
-import fetchApiData from './../apiCalls/api';
+import { fetchApiData, fetchFilm } from './../apiCalls/api';
 import { getRandomFilm } from './../helper';
 import './index.css';
 
@@ -18,24 +18,11 @@ class App extends Component {
   }
 
   async componentDidMount() {
-    const film = await this.fetchFilm();
+    const film = await fetchFilm();
     const currentRandomFilm = await getRandomFilm(film);
     this.setState({
       currentRandomFilm
     })
-  }
-
-  fetchFilm = async () => {
-    try {
-      const url = 'https://swapi.co/api/films/';
-      const response = await fetch(url);
-      const film = await response.json();
-      return film;
-    } catch(error) {
-      const error = 'We had an issue grabbing you movie';
-      const currentRandomFilm = error;
-      this.setState({currentRandomFilm});
-    }
   }
 
   handleClickEvent = async (event) => {
@@ -44,19 +31,12 @@ class App extends Component {
       this.setStateToExistingData(name);
       return;
     }
-   
-    try {
-      const currentSectionData = await fetchApiData(name); 
-      const allData = {...this.state.allData, [name]: currentSectionData}
-      await this.setState({
-        currentSectionData, 
-        allData
-      })
-    } catch(error) {
-      const error = 'There was an error fetching data';
-      const currentSectionData = error
-      this.setState({currentSectionData})
-    }
+    const currentSectionData = await fetchApiData(name); 
+    const allData = {...this.state.allData, [name]: currentSectionData}
+    await this.setState({
+      currentSectionData, 
+      allData
+    })
   }
 
   setStateToExistingData = (name) => {
@@ -118,10 +98,12 @@ class App extends Component {
               favoriteCount={this.state.allData.favoriteCount}
             />
           </nav>
-          <img 
-            src="./assets/beerTap.png" 
-            alt="beertap navigation" 
-            className="beer-nav"
+          <embed 
+            src="/assets/Cantina band.mp3"
+            loop="false" 
+            autostart="true" 
+            hidden="true" 
+            className="music-player"
           />
         </div>
         { 
