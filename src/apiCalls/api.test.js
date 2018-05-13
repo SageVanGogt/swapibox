@@ -4,8 +4,7 @@ import people from './../mockData/mockPeople';
 import vehicles from './../mockData/mockVehicles';
 import planets from './../mockData/mockPlanets';
 import films from './../mockData/mockFilms';
-import cleanPeople from './../mockData/cleanPeople';
-// import { getCleanVehicles, getCleanCharacters } from './helper'
+import { cleanPeople } from './../mockData/cleanPeople';
 
 describe('API calls', () => {
   describe('fetchApiData', () => {

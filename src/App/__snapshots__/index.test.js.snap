@@ -19,7 +19,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <img
-          alt="background image of cantina"
+          alt="cantina"
           className="cantina-image"
           src="/assets/cantina.jpg"
 />,
@@ -68,7 +68,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "alt": "background image of cantina",
+          "alt": "cantina",
           "className": "cantina-image",
           "src": "/assets/cantina.jpg",
         },
@@ -240,7 +240,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <img
-            alt="background image of cantina"
+            alt="cantina"
             className="cantina-image"
             src="/assets/cantina.jpg"
 />,
@@ -289,7 +289,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "alt": "background image of cantina",
+            "alt": "cantina",
             "className": "cantina-image",
             "src": "/assets/cantina.jpg",
           },
@@ -460,6 +460,7 @@ ShallowWrapper {
         "enableComponentDidUpdateOnSetState": true,
       },
     },
+    "disableLifecycleMethods": true,
   },
 }
 `;

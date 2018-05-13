@@ -3,16 +3,13 @@ import ReactDOM from 'react-dom';
 import { shallow, mount } from 'enzyme';
 import App from './index';
 import films from './../mockData/mockFilms';
+import { cleanPeople, cleanPeopleWithValues } from './../mockData/cleanPeople';
 
-describe.skip('App component', () => {
+describe('App component', () => {
   let mockFilms;
   let mockPeopleData;
 
   beforeEach(() => {
-    // mockFilms = films;
-    // window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
-    //   json: () => Promise.resolve(mockFilms)
-    // }));
     mockPeopleData = [{
       homeworld: "Tatooine",
       homeworldPopulation: "200000",
@@ -30,72 +27,71 @@ describe.skip('App component', () => {
   })
 
   it('should match the snapshot', () => {
-    const wrapper = shallow(<App />);
-
+    const wrapper = shallow(<App />, {disableLifecycleMethods: true});        
     expect(wrapper).toMatchSnapshot();
   })
 
   it('Should render with the correct default state', () => {
-    const wrapper = shallow(<App />);
-
+    const wrapper = shallow(<App />, {disableLifecycleMethods: true});      
+    const expectedAllData = {vehicles: [], planets: [], people: [], favorites: [], favoriteCount: 0};
     expect(wrapper.state('currentRandomFilm')).toEqual({});
     expect(wrapper.state('currentSectionData')).toEqual([]);
+    expect(wrapper.state('allData')).toEqual(expectedAllData);
   });
 
-  it('fetchfilm return an array of films', async () => {
-    const wrapper = shallow(<App />)
-    const expected = mockFilms
-    const getRandomFilm = jest.fn().mockImplementation(() => {
-      return expected
-    });
-    const actual = await wrapper.instance().fetchFilm()
+  // it('componentDidMount should return an array of films as the state', async () => {
+  //   const wrapper = shallow(<App />)
+  //   const expected = mockFilms
+  //   const getRandomFilm = jest.fn().mockImplementation(() => {
+  //     return expected
+  //   });
+  //   const actual = await wrapper.instance().fetchFilm()
 
-    expect(actual).toEqual(expected);
-  })
-
+  //   expect(actual).toEqual(expected);
+  // })
+  
   it('handleFavorite should locate a card in currentSectionData and place it in allData.favorites', () => {
-    const wrapper = shallow(<App />);
+    const wrapper = shallow(<App />, {disableLifecycleMethods: true});    
     const mockEvent = {target: {value: 'Luke Skywalker'}}
-
+    
     wrapper.setState({currentSectionData: mockPeopleData});
     wrapper.instance().handleFavorite(mockEvent);
     
     expect(wrapper.state('allData').favorites.length).toEqual(1);
   })
-
-  it('handleclickEvent', () => {
-    
-  })
-
+  
   it('setStateToExistingData should set currentSectionData to data from allData', () => {
-    const wrapper = shallow(<App />);
+    const wrapper = shallow(<App />, {disableLifecycleMethods: true});    
     const mockEvent = {target: {value: 'Luke Skywalker'}}
     const allData = {people: mockPeopleData}
     
     wrapper.setState({allData});
     wrapper.instance().setStateToExistingData('people');
-
+    
     expect(wrapper.state('currentSectionData')).toEqual(mockPeopleData)
   })
-
+  
   it('handleClickEvent should call setStateToExistingData if there is data in the allData object', () => {
-    const wrapper = shallow(<App />);
+    const wrapper = shallow(<App />, {disableLifecycleMethods: true});    
     const mockEvent = {target: {name: 'people'}}
     const allData = {people: mockPeopleData}
     const spy =  jest.spyOn(wrapper.instance(), 'setStateToExistingData');
     wrapper.setState({allData})
     wrapper.instance().handleClickEvent(mockEvent);
-
+    
     expect(spy).toHaveBeenCalledWith('people')
   })
-
-  // it('handleClickEvent should call fetchApiData if there is no data in the allData object', () => {
-  //   const wrapper = shallow(<App />);
-  //   const mockEvent = {target: {name: 'people'}}
-  //   const spy =  jest.spyOn(wrapper.instance(), 'fetchApiData');
-  //   wrapper.instance().handleClickEvent(mockEvent);
-
-  //   expect(spy).toHaveBeenCalledWith('people')
-  // })
-
+  
+  it.skip('handleClickEvent should call fetchApiData and setState and allData if the relevant info is not already present', async () => {
+    const wrapper = shallow(<App />, {disableLifecycleMethods: true});    
+    const mockEvent = {target: {name: 'people'}};
+    const mockCleanData = cleanPeople;
+    const fetchApiData = jest.fn().mockImplementation(() => (mockCleanData))
+    await wrapper.instance().handleClickEvent(mockEvent)
+    
+  
+    expect(wrapper.state('currentSectionData')).toEqual(cleanPeopleWithValues);
+  })
+  
 })
+  

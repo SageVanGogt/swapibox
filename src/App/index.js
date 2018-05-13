@@ -31,19 +31,12 @@ class App extends Component {
       this.setStateToExistingData(name);
       return;
     }
-   
-    try {
-      const currentSectionData = await fetchApiData(name); 
-      const allData = {...this.state.allData, [name]: currentSectionData}
-      await this.setState({
-        currentSectionData, 
-        allData
-      })
-    } catch(error) {
-      const error = 'There was an error fetching data';
-      const currentSectionData = error
-      this.setState({currentSectionData})
-    }
+    const currentSectionData = await fetchApiData(name); 
+    const allData = {...this.state.allData, [name]: currentSectionData}
+    await this.setState({
+      currentSectionData, 
+      allData
+    })
   }
 
   setStateToExistingData = (name) => {
