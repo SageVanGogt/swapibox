@@ -5,24 +5,26 @@ import './index.css';
 
 const Card = (props) => {
   const { 
-          name, 
-          species, 
-          homeworld, 
-          homeworldPopulation, 
-          terrain, 
-          climate, 
-          population, 
-          residents,
-          model, 
-          vehicleClass, 
-          passengerCount,
-          favorited
-        } = props;
+    name, 
+    species, 
+    homeworld, 
+    homeworldPopulation, 
+    terrain, 
+    climate, 
+    population, 
+    residents,
+    model, 
+    vehicleClass, 
+    passengerCount,
+    favorited,
+    handleFavorite
+  } = props;
+  const favoriteClass = favorited ? 'favorited' : null;
   const planetCard = residents ? (
-    <div className="card planet-card">
+    <div className={`card planet-card ${favoriteClass}`}>
       <Button 
         section={'favorite'}
-        handleFavorite={props.handleFavorite}
+        handleFavorite={handleFavorite}
         name={name}
         favorited={favorited}
       />
@@ -34,7 +36,7 @@ const Card = (props) => {
     </div>
   ) : null;
   const vehicleCard = vehicleClass ? (
-    <div className="card vehicle-card">
+    <div className={`card vehicle-card ${favoriteClass}`}>
       <Button 
         section={'favorite'}
         handleFavorite={props.handleFavorite}
@@ -48,8 +50,9 @@ const Card = (props) => {
     </div>
   ) : null;
   const personCard = homeworld ? (
-    <div className="card person-card">
-      <Button section={'favorite'}
+    <div className={`card person-card ${favoriteClass}`}>
+      <Button 
+        section={'favorite'}
         handleFavorite={props.handleFavorite}
         name={name}
         favorited={favorited}
@@ -61,15 +64,14 @@ const Card = (props) => {
     </div>
   ): null; 
 
-
-  return(
+  return (
     <div className="category-card">
       {vehicleCard}
       {personCard}
       {planetCard}
     </div>
   );
-}
+};
 
 Card.propTypes = {
   name: PropTypes.string.isRequired,
@@ -84,6 +86,6 @@ Card.propTypes = {
   vehicleClass: PropTypes.string,
   passengerCount: PropTypes.string,
   favorited: PropTypes.bool
-}
+};
 
 export default Card;

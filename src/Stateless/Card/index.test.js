@@ -17,16 +17,16 @@ describe('Card component', () => {
 
   it('should match the snapshot of when it recieves the planet props', () => {
     const props = {
-      residents: 'residents', 
+      residents, 
       name,
       terrain,
       population, 
       climate
-    }
-    const wrapper = shallow(<Card {...props}/>)
+    };
+    const wrapper = shallow(<Card {...props}/>);
 
-    expect(wrapper).toMatchSnapshot()
-  })
+    expect(wrapper).toMatchSnapshot();
+  });
 
   it('should match the snapshot when it receives vehicle props', () => {
     const props = {
@@ -34,12 +34,12 @@ describe('Card component', () => {
       vehicleClass,
       model,
       passengerCount
-    }
-    const wrapper = shallow(<Card {...props}/>)
+    };
+    const wrapper = shallow(<Card {...props}/>);
     
 
     expect(wrapper).toMatchSnapshot();
-  })
+  });
 
   it('should match the snapshot when it recieves people props', () => {
     const props = {
@@ -47,10 +47,9 @@ describe('Card component', () => {
       species,
       homeworld,
       homeworldPopulation
-    }
-    const wrapper = shallow(<Card {...props}/>)
+    };
+    const wrapper = shallow(<Card {...props}/>);
 
     expect(wrapper).toMatchSnapshot();    
-  })
-
-})
+  });
+});

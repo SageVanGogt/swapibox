@@ -5,13 +5,13 @@ import './../setupTests';
 
 describe('Button component', () => {
   it('should render a button', () => {
-    const actual = shallow(<Button />)
+    const actual = shallow(<Button />);
 
     expect(actual).toMatchSnapshot();
   });
 
   it('should render the apppropriate button depending on which section prop is passed in', () => {
-    const actual = shallow(<Button section={'vehicles'}/>)
+    const actual = shallow(<Button section={'vehicles'}/>);
 
     expect(actual).toMatchSnapshot();
   });
@@ -48,4 +48,4 @@ describe('Button component', () => {
     
     expect(wrapper.find('button').hasClass('favorite-active')).toBe(true);
   });
-})
+});

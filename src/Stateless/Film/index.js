@@ -10,11 +10,13 @@ const Film = (props) => {
       <div className="scrolling-text">
         <p>{openingCrawl}</p>
       </div>
-      <h2 className="title">{title}</h2>
-      <h4 className="year">{releaseYear}</h4>
+      <div className="title-year-container">
+        <h2 className="title">{title}</h2>
+        <h4 className="year">{releaseYear}</h4>
+      </div>
     </div>
   );
-}
+};
 
 Film.propTypes = {
   currentRandomFilm: PropTypes.object.isRequired

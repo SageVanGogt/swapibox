@@ -8,11 +8,11 @@ describe('Film container component', () => {
       openingCrawl: 'aca', 
       title: 'aca', 
       releaseYear: 'aca'
-    }
+    };
     const wrapper = shallow(<Film 
       currentRandomFilm={props}
     />);
     
     expect(wrapper).toMatchSnapshot();
-  })
-})
+  });
+});

@@ -9,11 +9,11 @@ describe('Card Container component', () => {
       vehicleClass: 'rambo',
       model: 'rambo',
       passengerCount: 'rambo'
-    }]
+    }];
     const wrapper = shallow(<CardContainer 
       currentSectionData={currentSectionData}
-    />)
+    />);
 
     expect(wrapper).toMatchSnapshot();
-  })
-})
+  });
+});

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import Button from './../Button/index';
-import Film from './../Film/index';
-import CardContainer from './../CardContainer/index';
-import { fetchApiData, fetchFilm } from './../apiCalls/api';
-import { getRandomFilm } from './../helper';
+import Button from './../../Stateless/Button/index';
+import Film from './../../Stateless/Film/index';
+import CardContainer from './../../Stateless/CardContainer/index';
+import { fetchApiData, fetchFilm } from './../../apiCalls/api';
+import { getRandomFilm } from './../../helper';
 import './index.css';
 
 class App extends Component {
@@ -13,7 +13,13 @@ class App extends Component {
     this.state = {
       currentRandomFilm: {},
       currentSectionData: [],
-      allData: {vehicles: [], planets: [], people: [], favorites: [], favoriteCount: 0}
+      allData: {
+        vehicles: [], 
+        planets: [], 
+        people: [], 
+        favorites: [], 
+        favoriteCount: 0
+      }
     };
   }
 
@@ -22,21 +28,21 @@ class App extends Component {
     const currentRandomFilm = await getRandomFilm(film);
     this.setState({
       currentRandomFilm
-    })
+    });
   }
 
   handleClickEvent = async (event) => {
     const { name } = event.target;
-    if(this.state.allData[name].length || name === 'favorites') {
+    if (this.state.allData[name].length || name === 'favorites') {
       this.setStateToExistingData(name);
       return;
     }
     const currentSectionData = await fetchApiData(name); 
-    const allData = {...this.state.allData, [name]: currentSectionData}
+    const allData = {...this.state.allData, [name]: currentSectionData};
     await this.setState({
       currentSectionData, 
       allData
-    })
+    });
   }
 
   setStateToExistingData = (name) => {
@@ -44,30 +50,29 @@ class App extends Component {
 
     this.setState({
       currentSectionData
-    })
+    });
   }
 
   handleFavorite = (event) => {
     const { value } = event.target;
-    const currentChosen = this.state.currentSectionData.find(data => data.name === value)
+    const currentChosen = 
+      this.state.currentSectionData.find(data => data.name === value);
     const favorites = this.state.allData.favorites;
     const favoriteExists = favorites.find(data => data.name === value);
-    //includes filter out, if it does spread it in
-    //refactor this area
+  
     currentChosen.favorited = !currentChosen.favorited;
-
-    if(favoriteExists) {
+    if (favoriteExists) {
       const favoriteIndex = favorites.indexOf(favoriteExists);
       favorites.splice(favoriteIndex, 1);
     } else {
-      favorites.push(currentChosen)
+      favorites.push(currentChosen);
     }
-    const favoriteCount = favorites.length
-    const allData = {...this.state.allData, favorites, favoriteCount}
+    const favoriteCount = favorites.length;
+    const allData = {...this.state.allData, favorites, favoriteCount};
     
     this.setState({
       allData
-    })
+    });
   }
 
   render() {
