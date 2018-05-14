@@ -38,16 +38,20 @@ ShallowWrapper {
                     aca
           </p>
 </div>,
-        <h2
-          className="title"
+        <div
+          className="title-year-container"
 >
-          aca
-</h2>,
-        <h4
-          className="year"
->
-          aca
-</h4>,
+          <h2
+                    className="title"
+          >
+                    aca
+          </h2>
+          <h4
+                    className="year"
+          >
+                    aca
+          </h4>
+</div>,
       ],
       "className": "film-container",
     },
@@ -95,24 +99,48 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "aca",
-          "className": "title",
+          "children": Array [
+            <h2
+              className="title"
+>
+              aca
+</h2>,
+            <h4
+              className="year"
+>
+              aca
+</h4>,
+          ],
+          "className": "title-year-container",
         },
         "ref": null,
-        "rendered": "aca",
-        "type": "h2",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "aca",
-          "className": "year",
-        },
-        "ref": null,
-        "rendered": "aca",
-        "type": "h4",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "aca",
+              "className": "title",
+            },
+            "ref": null,
+            "rendered": "aca",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "aca",
+              "className": "year",
+            },
+            "ref": null,
+            "rendered": "aca",
+            "type": "h4",
+          },
+        ],
+        "type": "div",
       },
     ],
     "type": "div",
@@ -136,16 +164,20 @@ ShallowWrapper {
                         aca
             </p>
 </div>,
-          <h2
-            className="title"
+          <div
+            className="title-year-container"
 >
-            aca
-</h2>,
-          <h4
-            className="year"
->
-            aca
-</h4>,
+            <h2
+                        className="title"
+            >
+                        aca
+            </h2>
+            <h4
+                        className="year"
+            >
+                        aca
+            </h4>
+</div>,
         ],
         "className": "film-container",
       },
@@ -193,24 +225,48 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "aca",
-            "className": "title",
+            "children": Array [
+              <h2
+                className="title"
+>
+                aca
+</h2>,
+              <h4
+                className="year"
+>
+                aca
+</h4>,
+            ],
+            "className": "title-year-container",
           },
           "ref": null,
-          "rendered": "aca",
-          "type": "h2",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "aca",
-            "className": "year",
-          },
-          "ref": null,
-          "rendered": "aca",
-          "type": "h4",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "aca",
+                "className": "title",
+              },
+              "ref": null,
+              "rendered": "aca",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "aca",
+                "className": "year",
+              },
+              "ref": null,
+              "rendered": "aca",
+              "type": "h4",
+            },
+          ],
+          "type": "div",
         },
       ],
       "type": "div",

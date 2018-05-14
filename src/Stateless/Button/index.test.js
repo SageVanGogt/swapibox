@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from './index';
 import { shallow } from 'enzyme';
-import './../setupTests';
+import './../../setupTests';
 
 describe('Button component', () => {
   it('should render a button', () => {

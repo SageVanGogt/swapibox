@@ -19,7 +19,8 @@ h2 {
   border-radius: 5px; }
 
 h3, h4, h5 {
-  padding: 3px;
+  background-color: #3b444b;
+  padding: 5px;
   border-radius: 5px; }
 
 .card-key {
