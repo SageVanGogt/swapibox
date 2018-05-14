@@ -59,10 +59,8 @@ class App extends Component {
       this.state.currentSectionData.find(data => data.name === value);
     const favorites = this.state.allData.favorites;
     const favoriteExists = favorites.find(data => data.name === value);
-    //includes filter out, if it does spread it in
-    //refactor this area
+  
     currentChosen.favorited = !currentChosen.favorited;
-
     if (favoriteExists) {
       const favoriteIndex = favorites.indexOf(favoriteExists);
       favorites.splice(favoriteIndex, 1);

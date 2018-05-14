@@ -19,8 +19,9 @@ const Card = (props) => {
     favorited,
     handleFavorite
   } = props;
+  const favoriteClass = favorited ? 'favorited' : null;
   const planetCard = residents ? (
-    <div className="card planet-card">
+    <div className={`card planet-card ${favoriteClass}`}>
       <Button 
         section={'favorite'}
         handleFavorite={handleFavorite}
@@ -35,7 +36,7 @@ const Card = (props) => {
     </div>
   ) : null;
   const vehicleCard = vehicleClass ? (
-    <div className="card vehicle-card">
+    <div className={`card vehicle-card ${favoriteClass}`}>
       <Button 
         section={'favorite'}
         handleFavorite={props.handleFavorite}
@@ -49,8 +50,9 @@ const Card = (props) => {
     </div>
   ) : null;
   const personCard = homeworld ? (
-    <div className="card person-card">
-      <Button section={'favorite'}
+    <div className={`card person-card ${favoriteClass}`}>
+      <Button 
+        section={'favorite'}
         handleFavorite={props.handleFavorite}
         name={name}
         favorited={favorited}
