@@ -1,4 +1,7 @@
-import { getCleanCharacters, getCleanPlanets, getCleanVehicles } from './../helper';
+import { 
+  getCleanCharacters, 
+  getCleanPlanets, 
+  getCleanVehicles } from './../helper';
 
 const fetchApiData = async (name) => {
   try {
@@ -15,14 +18,14 @@ const fetchApiData = async (name) => {
       case 'vehicles':
         return await getCleanVehicles(data);
       default: 
-        'get a job'
+        'get a job';
         break;
     }
-  } catch(er) {
+  } catch (er) {
     let error = 'fetch failed';
     throw error;
   }
-}
+};
 
 const fetchFilm = async () => {
   try {
@@ -30,11 +33,11 @@ const fetchFilm = async () => {
     const response = await fetch(url);
     const films = await response.json();
     return films;
-  } catch(er) {
+  } catch (er) {
     let error = 'Error grabbing film';
     throw error;
   }
-}
+};
 
 const fetchCharacterInfo = (characters) => {
   const unresolvedPromises = characters.map(async person => {
@@ -45,32 +48,32 @@ const fetchCharacterInfo = (characters) => {
       homeworld: homeworld.name,
       homeworldPopulation: homeworld.population, 
       species: species.name
-    })
-  })
-  return Promise.all(unresolvedPromises)
-}
+    });
+  });
+  return Promise.all(unresolvedPromises);
+};
 
 const fetchSpeciesInfo = async (endpoint) => {
   try {  
     const response = await fetch(endpoint);
     const species = await response.json();
     return species;
-  } catch(er) {
+  } catch (er) {
     let error = 'Fetch for species failed';
     throw error;
   }
-}
+};
 
 const fetchHomeworld = async (endpoint) => {
   try {
     const response = await fetch(endpoint);
     const homeworld = await response.json();
     return homeworld;
-  } catch(er) {
+  } catch (er) {
     let error = 'Fetch for homeworld failed';
     throw error;
   }
-}
+};
 
 const fetchPlanetInfo = (planets) => {
   try {
@@ -78,31 +81,30 @@ const fetchPlanetInfo = (planets) => {
       const unresolvedPromises = await planet.residents.map(async res => {
         const resident = await fetchResident(res);
         return resident.name;
-      })
+      });
       const resolvedPromises = await Promise.all(unresolvedPromises);
       return {
         ...planet,
         residents: resolvedPromises
-        };
+      };
     });
-
-  return Promise.all(planetData);
-  } catch(er) {
+    return Promise.all(planetData);
+  } catch (er) {
     let error = new Error('fetch failed');
     throw error;
   }
-}
+};
 
 const fetchResident = async (res) => {
   try {
     const response = await fetch(res);
     const resident = await response.json();
-    return resident
-  } catch(er) {
+    return resident;
+  } catch (er) {
     let error = 'Failed to fetch resident';
     throw error;
   }
-}
+};
 
 export {
   fetchApiData,

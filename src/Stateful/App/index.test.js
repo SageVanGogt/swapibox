@@ -1,14 +1,15 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import App from './index';
-import films from './../mockData/mockFilms';
-import { cleanPeople, cleanPeopleWithValues } from './../mockData/cleanPeople';
+import films from './../../mockData/mockFilms';
+import { cleanPeople, cleanPeopleWithValues } from './../../mockData/cleanPeople';
 
 describe('App component', () => {
   let mockFilms;
   let mockPeopleData;
 
   beforeEach(() => {
+    mockFilms = films;
     mockPeopleData = [{
       homeworld: "Tatooine",
       homeworldPopulation: "200000",
@@ -22,7 +23,7 @@ describe('App component', () => {
       name: "R2-D2",
       species: "Droid",
       favorited: false
-    }]
+    }];
   });
 
   it('should match the snapshot', () => {
@@ -82,7 +83,6 @@ describe('App component', () => {
     const fetchApiData = jest.fn().mockImplementation(() => (mockCleanData));
     await wrapper.instance().handleClickEvent(mockEvent);
     
-  
     expect(wrapper.state('currentSectionData')).toEqual(cleanPeopleWithValues);
   });
   

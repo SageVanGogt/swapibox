@@ -8,7 +8,7 @@ ShallowWrapper {
     climate="padawan"
     name="padawan"
     population="padawan"
-    residents="residents"
+    residents="padawan"
     terrain="padawan"
 />,
   Symbol(enzyme.__renderer__): Object {
@@ -27,7 +27,7 @@ ShallowWrapper {
         null,
         null,
         <div
-          className="card planet-card"
+          className="card planet-card null"
 >
           <Button
                     favorited={undefined}
@@ -74,7 +74,7 @@ ShallowWrapper {
                     >
                               residents: 
                     </span>
-                    residents
+                    padawan
           </h4>
 </div>,
       ],
@@ -135,10 +135,10 @@ ShallowWrapper {
               >
                             residents: 
               </span>
-              residents
+              padawan
 </h4>,
           ],
-          "className": "card planet-card",
+          "className": "card planet-card null",
         },
         "ref": null,
         "rendered": Array [
@@ -297,7 +297,7 @@ ShallowWrapper {
 >
                   residents: 
 </span>,
-                "residents",
+                "padawan",
               ],
             },
             "ref": null,
@@ -314,7 +314,7 @@ ShallowWrapper {
                 "rendered": "residents: ",
                 "type": "span",
               },
-              "residents",
+              "padawan",
             ],
             "type": "h4",
           },
@@ -334,7 +334,7 @@ ShallowWrapper {
           null,
           null,
           <div
-            className="card planet-card"
+            className="card planet-card null"
 >
             <Button
                         favorited={undefined}
@@ -381,7 +381,7 @@ ShallowWrapper {
                         >
                                     residents: 
                         </span>
-                        residents
+                        padawan
             </h4>
 </div>,
         ],
@@ -442,10 +442,10 @@ ShallowWrapper {
                 >
                                 residents: 
                 </span>
-                residents
+                padawan
 </h4>,
             ],
-            "className": "card planet-card",
+            "className": "card planet-card null",
           },
           "ref": null,
           "rendered": Array [
@@ -604,7 +604,7 @@ ShallowWrapper {
 >
                     residents: 
 </span>,
-                  "residents",
+                  "padawan",
                 ],
               },
               "ref": null,
@@ -621,7 +621,7 @@ ShallowWrapper {
                   "rendered": "residents: ",
                   "type": "span",
                 },
-                "residents",
+                "padawan",
               ],
               "type": "h4",
             },
@@ -666,7 +666,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <div
-          className="card vehicle-card"
+          className="card vehicle-card null"
 >
           <Button
                     favorited={undefined}
@@ -759,7 +759,7 @@ ShallowWrapper {
               padawan
 </h5>,
           ],
-          "className": "card vehicle-card",
+          "className": "card vehicle-card null",
         },
         "ref": null,
         "rendered": Array [
@@ -921,7 +921,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <div
-            className="card vehicle-card"
+            className="card vehicle-card null"
 >
             <Button
                         favorited={undefined}
@@ -1014,7 +1014,7 @@ ShallowWrapper {
                 padawan
 </h5>,
             ],
-            "className": "card vehicle-card",
+            "className": "card vehicle-card null",
           },
           "ref": null,
           "rendered": Array [
@@ -1204,7 +1204,7 @@ ShallowWrapper {
       "children": Array [
         null,
         <div
-          className="card person-card"
+          className="card person-card null"
 >
           <Button
                     favorited={undefined}
@@ -1297,7 +1297,7 @@ ShallowWrapper {
               padawan
 </h5>,
           ],
-          "className": "card person-card",
+          "className": "card person-card null",
         },
         "ref": null,
         "rendered": Array [
@@ -1459,7 +1459,7 @@ ShallowWrapper {
         "children": Array [
           null,
           <div
-            className="card person-card"
+            className="card person-card null"
 >
             <Button
                         favorited={undefined}
@@ -1552,7 +1552,7 @@ ShallowWrapper {
                 padawan
 </h5>,
             ],
-            "className": "card person-card",
+            "className": "card person-card null",
           },
           "ref": null,
           "rendered": Array [
